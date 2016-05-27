@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Mishka - Вязание на заказ</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- Логотип -->
+      <div class="logo">
+        <a href="index.html"><img src="http://placehold.it/100x50" width="100" height="50" alt="логотип Mishka"></a>
+      </div>
+      <!-- .Логотип -->
+
+      <!-- Навигация -->
+      <nav class="main-nav  main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
+          <li class="main-nav__item"><a title="Заказать вязание">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item  main-nav__user-item--search"><a href="#" title="Вы можете найти нужный вам товар в поиске">Поиск</a></li>
+          <li class="main-nav__user-item"><a href="#" title="Заказать вязание">Корзина:<span class="main-nav__value-cart">пока пуста</span></a></li>
+        </ul>
+      </nav>
+      <!-- .Навигация -->
+    </header>
+
+
+    <main class="page-main">
+      <!-- Заголовок страницы-->
+      <div class="content-header">
+        <h1 class="content-header__title">Вязание на заказ</h1>
+      </div>
+      <!-- .Заголовок страницы-->
+
+      <!-- Форма заказа вязания вещей -->
+      <form class="form-knitting" action="#" method="get">
+        <p class="form-knitting__council">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <!-- Раздел ТИП -->
+        <fieldset class="form-knitting__set">
+          <legend class="form-knitting__title">Тип</legend>
+          <label class="radio">
+            <input class="radio__value" type="radio" name="knitting-radio" value="Аксессуары для интерьера" checked>
+            <span class="radio__title">Аксессуары для интерьера</span>
+            <span class="radio__state"></span>
+          </label>
+          <label class="radio">
+            <input class="radio__value" type="radio" name="knitting-radio" value="Детская игрушка">
+            <span class="radio__title">Детская игрушка</span>
+            <span class="radio__state"></span>
+          </label>
+        </fieldset>
+        <!-- .Раздел ТИП -->
+
+        <!-- Раздел ЦВЕТ -->
+        <fieldset class="form-knitting__set">
+          <legend class="form-knitting__title">Цвет</legend>
+          <label class="checkbox">
+            <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Белый" checked>
+            <span class="checkbox__title">Белый</span>
+            <span class="checkbox__state"></span>
+          </label>
+          <label class="checkbox">
+            <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Серый" checked>
+            <span class="checkbox__title">Серый</span>
+            <span class="checkbox__state"></span>
+          </label>
+          <label class="checkbox">
+            <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Тиффани">
+            <span class="checkbox__title">Тиффани</span>
+            <span class="checkbox__state"></span>
+          </label>
+          <label class="checkbox">
+            <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Чёрный">
+            <span class="checkbox__title">Чёрный</span>
+            <span class="checkbox__state"></span>
+          </label>
+          <label class="checkbox">
+            <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Розовый">
+            <span class="checkbox__title">Розовый</span>
+            <span class="checkbox__state"></span>
+          </label>
+          <label class="checkbox">
+            <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Оранжевый">
+            <span class="checkbox__title">Оранжевый</span>
+            <span class="checkbox__state"></span>
+          </label>
+        </fieldset>
+        <!-- .Раздел ЦВЕТ -->
+
+        <!-- Раздел ФИО -->
+        <fieldset class="form-knitting__set">
+          <legend class="form-knitting__title">ФИО</legend>
+          <label class="input">
+            <span class="input__title">Фамилия:</span>
+            <input class="input__value" type="text" name="fields" placeholder="Укажите фамилию" required>
+          </label>
+          <label class="input">
+            <span class="input__title">Имя:</span>
+            <input class="input__value" type="text" name="fields" placeholder="Введите ваше имя" required>
+          </label>
+          <label class="input">
+            <span class="input__title">Отчество:</span>
+            <input class="input__value" type="text" name="fields" placeholder="Отчество, если желаете">
+          </label>
+        </fieldset>
+        <!-- Раздел ФИО -->
+
+        <!-- Раздел с вводом номера телефона -->
+        <fieldset class="form-knitting__set">
+          <legend class="form-knitting__title">Тел</legend>
+          <label class="input">
+            <input class="input__value" type="tel" name="tel" placeholder="+7 ХХХ XXX ХХ ХХ" required>
+          </label>
+        </fieldset>
+        <!-- .Раздел с вводом номера телефона -->
+
+        <!-- Раздел с вводом электронной почты -->
+        <fieldset class="form-knitting__set">
+          <legend class="form-knitting__title">E-mail</legend>
+          <label class="input">
+            <input class="input__value" type="email" name="email" placeholder="Ваш e-mail" required>
+          </label>
+        </fieldset>
+        <!-- .Раздел с вводом электронной почты -->
+
+        <!-- Раздел с вводом пожеланий -->
+        <fieldset class="form-knitting__set">
+          <legend class="form-knitting__title">Доп</legend>
+          <label class="input">
+            <textarea class="input__value  input__value--frame" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </fieldset>
+        <!-- .Раздел с вводом пожеланий -->
+
+        <button class="button" type="button" name="knitting-button">Отправить заказ</button>
+      </form>
+      <!-- .Форма заказа вязания вещей-->
+    </main>
+
+
+    <footer class="page-footer">
+      <!-- Социальные кнопки -->
+      <div class="social-links">
+        <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
+        <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
+        <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
+      </div>
+      <!-- .Социальные кнопки -->
+
+      <!-- Копирайт -->
+      <div class="copyright">
+        <a class="copyright__title" href="https://htmlacademy.ru/" title="Перейти на сайт разработичка">Разработано</a>
+      </div>
+      <!-- .Копирайт -->
+    </footer>
+  </body>
+</html>
