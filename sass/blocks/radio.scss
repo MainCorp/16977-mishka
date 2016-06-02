@@ -1,0 +1,55 @@
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 23px;
+}
+
+.radio__value {
+  display: none;
+}
+
+.radio__title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  order: 1;
+
+  padding-left: 23px;
+  padding-top: 7px;
+}
+
+.radio__state {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $color-page;
+  border-radius: 50%;
+
+  &:hover{
+    border-color: $color-form;
+  }
+
+  &:active {
+    border-color: $color-form-down;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 9px;
+
+    display: none;
+
+    width: 16px;
+    height: 16px;
+    background: $color-form;
+    border-radius: 50%;
+  }
+
+}
+
+.radio__value:checked ~ .radio__state::before {
+  display: block;
+}

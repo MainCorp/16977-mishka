@@ -1,0 +1,14 @@
+.attracting__button {
+  font-family: "Tahoma";
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+
+  background-color: $color-bg;
+
+  &--color {
+    background-color: $color-bg-mod;
+  }
+
+}

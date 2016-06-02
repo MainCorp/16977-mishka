@@ -1,0 +1,21 @@
+.form-knitting__set {
+  padding: 0;
+  border: none;
+  border-top: 2px solid $color-form;
+}
+
+.form-knitting__council {
+  font-family: $fonts-page;
+  font-size: 14px;
+  line-height: 25px;
+  color: $color-page;
+}
+
+.form-knitting__title {
+  font-family: $fonts-page;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-title;
+  font-weight: bold;
+  text-transform: uppercase;
+}

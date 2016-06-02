@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - Милые штуки ручной работы для дома</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -16,12 +18,12 @@
       <nav class="main-nav  main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html" title="Заказать вязание">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html" title="Заказать вязание">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__user-items">
-          <li class="main-nav__user-item  main-nav__user-item--search"><a href="#" title="Вы можете найти нужный вам товар в поиске">Поиск</a></li>
-          <li class="main-nav__user-item"><a href="#" title="Заказать вязание">Корзина:<span class="main-nav__value-cart">пока пуста</span></a></li>
+          <li class="main-nav__user-item  main-nav__user-item--search"><a class="main-nav__link" href="#" title="Вы можете найти нужный вам товар в поиске">Поиск</a></li>
+          <li class="main-nav__user-item"><a class="main-nav__link" href="#" title="Заказать вязание">Корзина:<span class="main-nav__value-cart">пока пуста</span></a></li>
         </ul>
       </nav>
       <!-- .Навигация -->
@@ -31,7 +33,7 @@
     <main class="page-main">
       <!-- Заголовок страницы-->
       <div class="content-header">
-        <h1 class="content-header__title">Вязание на заказ</h1>
+        <h1 class="content-header__title">Милые штуки ручной работы для дома</h1>
       </div>
       <!-- .Заголовок страницы-->
 
@@ -64,7 +66,7 @@
           </tr>
         </table>
         <div class="goods__picture">
-          <img src="http://placehold.it/260x315" width="260" height="315" alt="Изображение товара">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара">
         </div>
         <div class="goods__price">Цена: 990 руб.</div>
         <button class="button" type="button" name="button">Заказать</button>
@@ -73,6 +75,7 @@
 
       <!-- О нас -->
       <div class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
         <div class="about__item">
           <img class="about__picture" src="http://placehold.it/50x50" width="50" height="50" alt="ico">
           <p class="about__point">Экологически чистые материалы</p>
@@ -129,8 +132,8 @@
         <div class="contacts__wrapper">
           <div class="contacts__row">
             <p class="contacts__date">e-mail:</p>
-            <p class="contacts__date"><a href="mailto:info@mimimishkashop.ru" title="Написать нам">info@mimimishkashop.ru</a></p>
-          </tr>
+            <p class="contacts__date"><a class="contacts__link" href="mailto:info@mimimishkashop.ru" title="Написать нам">info@mimimishkashop.ru</a></p>
+          </div>
           <div class="contacts__row">
             <p class="contacts__date">адрес:</p>
             <p class="contacts__date">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
@@ -138,7 +141,7 @@
         </div>
 
         <div class="contacts__map">
-          <img src="http://placehold.it/100x50" alt="Как до нас добраться">
+          <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Как до нас добраться">
         </div>
         <button class="button" type="button" name="button">Напишите нам</button>
       </div>

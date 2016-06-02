@@ -1,0 +1,27 @@
+.comments__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.comment__text {
+  font-family: $fonts-page;
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-page;
+}
+
+.comment__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.comment__nickname {
+  font-family: $fonts-page;
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-page;
+
+  text-decoration: none;
+}
