@@ -1,0 +1,17 @@
+.button {
+  font-family: $fonts-page;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-page;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #fff;
+  border: 2px solid $color-page;
+  padding: 16px 0;
+
+  &--min {
+
+  }
+
+}

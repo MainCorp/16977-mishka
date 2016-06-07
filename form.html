@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Mishka - Вязание на заказ</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -16,12 +18,12 @@
       <nav class="main-nav  main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
-          <li class="main-nav__item"><a title="Заказать вязание">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" title="Заказать вязание">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__user-items">
-          <li class="main-nav__user-item  main-nav__user-item--search"><a href="#" title="Вы можете найти нужный вам товар в поиске">Поиск</a></li>
-          <li class="main-nav__user-item"><a href="#" title="Заказать вязание">Корзина:<span class="main-nav__value-cart">пока пуста</span></a></li>
+          <li class="main-nav__user-item  main-nav__user-item--search"><a class="main-nav__link" href="#" title="Вы можете найти нужный вам товар в поиске">Поиск</a></li>
+          <li class="main-nav__user-item"><a class="main-nav__link" href="#" title="Заказать вязание">Корзина:<span class="main-nav__value-cart">пока пуста</span></a></li>
         </ul>
       </nav>
       <!-- .Навигация -->
@@ -44,7 +46,7 @@
           <legend class="form-knitting__title">Тип</legend>
           <label class="radio">
             <input class="radio__value" type="radio" name="knitting-radio" value="Аксессуары для интерьера" checked>
-            <span class="radio__title">Аксессуары для интерьера</span>
+            <span class="radio__title">Аксессуар для интерьера</span>
             <span class="radio__state"></span>
           </label>
           <label class="radio">

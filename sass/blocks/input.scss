@@ -1,0 +1,45 @@
+.input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input__title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+.input__value {
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 19px 18px;
+
+  &:hover {
+    border-color: $color-form;
+  }
+
+  &:focus {
+    border-color: $color-form;
+  }
+
+  &:invalid {
+    border-color: $color-form-invalid;
+  }
+
+  &--frame {
+    border: 2px solid #000;
+
+    &:hover {
+      border-color: $color-form;
+    }
+
+    &:focus {
+      border-color: $color-form;
+    }
+
+    &:invalid {
+      border-color: $color-form-invalid;
+    }
+  }
+
+}
