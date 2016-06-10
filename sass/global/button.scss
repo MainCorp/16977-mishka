@@ -9,9 +9,30 @@
   background-color: #fff;
   border: 2px solid $color-page;
   padding: 16px 0;
+  width: 100%;
 
-  &--min {
+}
 
+@media #{$tablet} {
+
+  .button {
+    max-width: 288px;
+
+    &--full-size {
+      max-width: 100%;
+    }
+
+    &--regime {
+      order: -1;
+      max-width: 170px;
+      max-height: 50px;
+      margin-top: 5px;
+    }
+
+    &--average {
+      max-width: 228px;
+    }
   }
+
 
 }

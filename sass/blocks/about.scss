@@ -1,11 +1,73 @@
+.about {
+  padding: 0 30px;
+  margin-bottom: 65px;
+
+  @media #{$tablet} {
+    padding: 0;
+    margin-bottom: 145px;
+  }
+
+  @media #{$desktop} {
+    margin-left: 175px;
+  }
+}
+
+.about__wrapper {
+
+  @media #{$tablet} {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop} {
+
+  }
+}
+
+.about__item {
+  padding-top: 30px;
+
+  @media #{$tablet} {
+    max-width: 285px;
+    padding-right: 30px;
+  }
+
+  @media #{$desktop} {
+    max-width: 350px;
+  }
+}
+
 .about__title {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+
+  margin: 0;
+
+  @media #{$tablet} {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media #{$desktop} {
+    font-size: 50px;
+    line-height: 57px;
+  }
 }
 
 .about__point {
   font-size: 16px;
   line-height: 19px;
   font-weight: bold;
+
+  margin: 0;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media #{$desktop} {
+    padding-left: 0;
+  }
 }

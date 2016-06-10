@@ -1,7 +1,56 @@
+.form-knitting {
+  margin-bottom: 30px;
+
+  @media #{$tablet} {
+    margin: 0;
+    margin-bottom: 50px;
+    position: relative;
+  }
+}
+
+.form-knitting__wrapper {
+  @media #{$tablet} {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      width: 500px;
+  }
+
+  @media #{$desktop} {
+      width: 70%;
+  }
+}
+
+
 .form-knitting__set {
   padding: 0;
   border: none;
-  border-top: 2px solid $color-form;
+
+  @media #{$tablet} {
+    padding-bottom: 50px;
+    padding-top: 70px;
+
+    display: flex;
+    
+
+    &--repainting {
+      background-color: $color-bg;
+      padding: 0;
+
+      @media #{$tablet} {
+        padding-bottom: 50px;
+        padding-top: 70px;
+      }
+    }
+
+    &--stick {
+      @media #{$tablet} {
+        padding: 0;
+        padding: 50px 0;
+      }
+    }
+  }
 }
 
 .form-knitting__council {
@@ -9,6 +58,15 @@
   font-size: 14px;
   line-height: 25px;
   color: $color-page;
+
+  margin: 0;
+
+  @media #{$desktop} {
+    padding: 0 175px;
+
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 .form-knitting__title {
@@ -18,4 +76,44 @@
   color: $color-title;
   font-weight: bold;
   text-transform: uppercase;
+
+  padding-bottom: 30px;
+
+  position: relative;
+
+  @media #{$tablet} {
+    padding: 0;
+    width: 165px;
+  }
+
+  @media #{$desktop} {
+    width: 175px;
+    text-align: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 7px;
+
+    height: 1px;
+    width: 200px;
+    background-color: $color-form;
+
+    @media #{$tablet} {
+      display: none;
+    }
+  }
+}
+
+.form-knitting__delivery {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }

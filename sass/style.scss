@@ -2,6 +2,10 @@
 @import "global/fonts.scss";
 @import "global/button.scss";
 
+
+@import "blocks/container";
+@import "blocks/page-header";
+@import "blocks/logo";
 @import "blocks/about";
 @import "blocks/attracting";
 @import "blocks/checkbox";
@@ -9,11 +13,12 @@
 @import "blocks/contacts";
 @import "blocks/content-header";
 @import "blocks/copyright";
+@import "blocks/catalog";
 @import "blocks/form-knitting";
 @import "blocks/goods";
 @import "blocks/input";
-@import "blocks/logo";
 @import "blocks/main-nav";
+@import "blocks/page-main";
 @import "blocks/page-footer";
 @import "blocks/product";
 @import "blocks/production";

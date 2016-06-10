@@ -3,6 +3,10 @@
   flex-wrap: wrap;
 
   margin-bottom: 23px;
+
+  @media #{$tablet} {
+    width: 240px;
+  }
 }
 
 .checkbox__value {

@@ -1,0 +1,7 @@
+.catalog {
+
+  @media #{$desktop} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
