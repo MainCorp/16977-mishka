@@ -1,0 +1,8 @@
+.page-header__wrapper {
+  position: relative;
+
+  @media #{$tablet} {
+    display: flex;
+    justify-content: space-between;
+  }
+}

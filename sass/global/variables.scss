@@ -1,9 +1,13 @@
 $color-page: #444444;
 $color-bg: #f1f1f1;
-$color-bg-mod: #56c3b2;
 $color-title: #63d1bb;
+$color-title-mod: #56c3b2;
 $color-form: #62d1ba;
 $color-form-invalid: #f0b1b1;
 $color-form-down: #c7c7c7;
 
 $fonts-page: "Open Sans";
+
+
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1150px)";

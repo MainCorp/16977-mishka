@@ -2,113 +2,129 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мишка - Каталог товаров</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <!-- Логотип -->
-      <div class="logo">
-        <a href="index.html"><img src="http://placehold.it/100x50" width="100" height="50" alt="логотип Mishka"></a>
-      </div>
-      <!-- .Логотип -->
+      <div class="container  page-header__wrapper">
+        <!-- Логотип -->
+        <div class="logo">
+          <a href="index.html"><img class="logo__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+        </div>
+        <!-- .Логотип -->
 
-      <!-- Навигация -->
-      <nav class="main-nav  main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" title="Перейти в каталог товаров">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html" title="Заказать вязание">Вязание на заказ</a></li>
-        </ul>
-        <ul class="main-nav__user-items">
-          <li class="main-nav__user-item  main-nav__user-item--search"><a class="main-nav__link" href="#" title="Вы можете найти нужный вам товар в поиске">Поиск</a></li>
-          <li class="main-nav__user-item"><a class="main-nav__link" href="#" title="Заказать вязание">Корзина:<span class="main-nav__value-cart">пока пуста</span></a></li>
-        </ul>
-      </nav>
-      <!-- .Навигация -->
+        <!-- Навигация -->
+        <nav class="main-nav  main-nav--closed">
+          <button class="main-nav__toggle" type="button">X</button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a class="main-nav__link" title="Перейти в каталог товаров">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html" title="Заказать вязание">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__user-items">
+            <li class="main-nav__user-item  main-nav__user-item--search"><a class="main-nav__link  main-nav__link--hidden" href="#" title="Вы можете найти нужный вам товар в поиске">Поиск по сайту</a></li>
+            <li class="main-nav__user-item  main-nav__user-item--cart"><a class="main-nav__link" href="#" title="Заказать вязание">Корзина: <span class="main-nav__value-cart">пока пуста</span></a></li>
+          </ul>
+          <ul class="main-nav__attracting">
+            <li class="main-nav__attracting-item"><a class="main-nav__link" href="#" title="Узнать о новых поступлениях">Новые поступления</a></li>
+            <li class="main-nav__attracting-item"><a class="main-nav__link" href="#" title="Узнать о распродажах">Распродажа</a></li>
+          </ul>
+          <div class="main-nav__delivery">Бесплатная доставка по России</div>
+        </nav>
+        <!-- .Навигация -->
+      </div>
     </header>
 
     <main class="page-main">
       <!-- Заголовок страницы-->
       <div class="content-header">
-        <h1 class="content-header__title">Каталог товаров</h1>
+        <div class="container  container__wrapper">
+          <h1 class="content-header__title">Каталог товаров</h1>
+        </div>
       </div>
       <!-- .Заголовок страницы-->
 
-      <!-- Список товаров -->
-      <section class="catalog">
-        <article class="product">
-          <figure class="product__picture">
-            <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Изображение товара">
-          </figure>
-          <div class="product__wrapper">
-            <h1 class="product__title">Зайчик-попрыгайчик</h1>
-            <p class="product__characteristic">Рост 30 см, вес 200 г</p>
-            <div class="product__cost">
-              <div class="product__price">1 200 руб.</div>
-              <a class="product__purchase" href="#" title="Купить товар">Купить</a>
+      <div class="container">
+        <!-- Список товаров -->
+        <section class="catalog">
+          <article class="product">
+            <figure class="product__picture">
+              <img src="img/photo-1-mobile@1x.jpg" alt="Изображение товара">
+            </figure>
+            <div class="product__wrapper">
+              <h1 class="product__title">Зайчик-попрыгайчик</h1>
+              <p class="product__characteristic">Рост 30 см, вес 200 г</p>
+              <div class="product__cost">
+                <div class="product__price">1 200 руб.</div>
+                <a class="product__purchase" href="#" title="Купить товар"></a>
+              </div>
             </div>
+          </article>
+
+          <article class="product">
+            <figure class="product__picture">
+              <img src="img/photo-2-mobile@1x.jpg" alt="Изображение товара">
+            </figure>
+            <div class="product__wrapper">
+              <h1 class="product__title">Корзинка для белья</h1>
+              <p class="product__characteristic">Диаметр 15 см, высота 10 см</p>
+              <div class="product__cost">
+                <div class="product__price">690 руб.</div>
+                <a class="product__purchase" href="#" title="Купить товар"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <figure class="product__picture">
+              <img src="img/photo-3-mobile@1x.jpg" alt="Изображение товара">
+            </figure>
+            <div class="product__wrapper">
+              <h1 class="product__title">Большая корзинка для игрушек</h1>
+              <p class="product__characteristic">Диаметр 30 см, высота 30 см</p>
+              <div class="product__cost">
+                <div class="product__price">1 500 руб.</div>
+                <a class="product__purchase" href="#" title="Купить товар"></a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- .Список товаров -->
+
+        <!-- Процесс производств -->
+        <article class="production">
+          <h1 class="production__title">Процесс производства</h1>
+          <div class="production__video">
+            <img src="img/video-mobile@1x.jpg" alt="Посмотреть видео о нашем производстве">
+          </div>
+          <div class="production__wrapper">
+            <p class="production__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="button  button--average" type="button" name="button">Сделать заказ</button>
           </div>
         </article>
-
-        <article class="product">
-          <figure class="product__picture">
-            <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Изображение товара">
-          </figure>
-          <div class="product__wrapper">
-            <h1 class="product__title">Корзинка для белья</h1>
-            <p class="product__characteristic">Диаметр 15 см, высота 10 см</p>
-            <div class="product__cost">
-              <div class="product__price">690 руб.</div>
-              <a class="product__purchase" href="#" title="Купить товар">Купить</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product">
-          <figure class="product__picture">
-            <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Изображение товара">
-          </figure>
-          <div class="product__wrapper">
-            <h1 class="product__title">Большая корзинка для игрушек</h1>
-            <p class="product__characteristic">Диаметр 30 см, высота 30 см</p>
-            <div class="product__cost">
-              <div class="product__price">1 500 руб.</div>
-              <a class="product__purchase" href="#" title="Купить товар">Купить</a>
-            </div>
-          </div>
-        </article>
-      </section>
-      <!-- .Список товаров -->
-
-      <!-- Процесс производств -->
-      <article class="production">
-        <h1 class="production__title">Процесс производства</h1>
-        <div class="production__video">
-          <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Посмотреть видео о нашем производстве">
-        </div>
-        <p class="production__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="button  button--min" type="button" name="button">Отправить заказ</button>
-      </article>
-      <!-- .Процесс производств -->
+        <!-- .Процесс производств -->
+      </div>
     </main>
 
 
     <footer class="page-footer">
-      <!-- Социальные кнопки -->
-      <div class="social-links">
-        <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
-        <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
-        <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
-      </div>
-      <!-- .Социальные кнопки -->
+      <div class="container">
+        <!-- Социальные кнопки -->
+        <div class="social-links">
+          <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
+          <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
+          <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
+        </div>
+        <!-- .Социальные кнопки -->
 
-      <!-- Копирайт -->
-      <div class="copyright">
-        <a class="copyright__title" href="https://htmlacademy.ru/" title="Перейти на сайт разработичка">Разработано</a>
+        <!-- Копирайт -->
+        <div class="copyright">
+          <a class="copyright__title" href="https://htmlacademy.ru/" title="Перейти на сайт разработичка">Разработано</a>
+        </div>
+        <!-- .Копирайт -->
       </div>
-      <!-- .Копирайт -->
     </footer>
   </body>
 </html>

@@ -1,0 +1,26 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$tablet} {
+    width: 668px;
+  }
+
+  @media #{$desktop} {
+    width: 1050px;
+  }
+
+  &--favour {
+    @media #{$tablet} {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
+  }
+
+}
+
+.container__wrapper {
+  display: flex;
+  flex-direction: column;
+}

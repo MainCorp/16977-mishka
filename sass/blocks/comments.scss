@@ -1,7 +1,46 @@
+.comments {
+  padding: 0 30px;
+  margin-bottom: 90px;
+
+  position: relative;
+
+  @media #{$tablet} {
+    padding: 0;
+    margin-bottom: 90px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media #{$desktop} {
+    margin-left: 175px;
+  }
+}
+
 .comments__title {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+
+  margin: 0;
+
+  @media #{$tablet} {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 55px;
+
+    order: -2;
+  }
+
+  @media #{$desktop} {
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+
+.comment {
+  margin: 0;
 }
 
 .comment__text {
@@ -9,12 +48,25 @@
   font-size: 14px;
   line-height: 30px;
   color: $color-page;
+
+  @media #{$tablet} {
+    font-size: 16px;
+
+    margin: 0;
+  }
+
+  @media #{$desktop} {
+    max-width: 700px;
+    padding-bottom: 20px;
+  }
 }
 
 .comment__author {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+
+  margin: 0;
 }
 
 .comment__nickname {

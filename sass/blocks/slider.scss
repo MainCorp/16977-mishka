@@ -1,0 +1,23 @@
+.slider__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+
+  @media #{$tablet} {
+    position: absolute;
+    right: 0;
+    top: 220px;
+  }
+
+  @media #{$desktop} {
+    position: absolute;
+    right: 0;
+    top: 240px;
+  }
+}
+
+.slider__control {
+  width: 128px;
+  height: 50px;
+  border: 1px solid #ececec;
+}
