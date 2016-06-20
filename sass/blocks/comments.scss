@@ -1,12 +1,12 @@
 .comments {
   padding: 0 30px;
-  margin-bottom: 90px;
+  margin-bottom: 89px;
 
   position: relative;
 
   @media #{$tablet} {
     padding: 0;
-    margin-bottom: 90px;
+    margin-bottom: 240px;
 
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +15,7 @@
 
   @media #{$desktop} {
     margin-left: 175px;
+    margin-bottom: 330px;
   }
 }
 
@@ -28,7 +29,7 @@
   @media #{$tablet} {
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 
     order: -2;
   }
@@ -49,6 +50,9 @@
   line-height: 30px;
   color: $color-page;
 
+  margin: 0;
+  margin-top: 22px;
+
   @media #{$tablet} {
     font-size: 16px;
 
@@ -57,7 +61,6 @@
 
   @media #{$desktop} {
     max-width: 700px;
-    padding-bottom: 20px;
   }
 }
 
@@ -67,6 +70,16 @@
   font-weight: bold;
 
   margin: 0;
+  margin-top: 20px;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  @media #{$tablet} {
+    font-size: 16px;
+  }
 }
 
 .comment__nickname {
@@ -76,4 +89,12 @@
   color: $color-page;
 
   text-decoration: none;
+
+  @media #{$tablet} {
+    font-size: 16px;
+  }
+
+  @media #{$tablet} {
+    line-height: 30px;
+  }
 }

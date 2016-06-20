@@ -58,7 +58,7 @@
         <!-- Предлагаемый товар недели -->
         <div class="goods">
           <div class="goods__headings">
-            <h2 class="goods__title">Вязаные картинки</h2>
+            <h2 class="goods__title">Вязаные корзинки</h2>
             <p class="goods__subtitle">Товар недели</p>
           </div>
           <div class="goods__inner">
@@ -162,7 +162,9 @@
           <div class="contacts__map">
             <img src="img/map-mobile@1x.jpg" alt="Как до нас добраться">
           </div>
-          <button class="button  button--average" type="button" name="button">Напишите нам</button>
+          <div class="button__wrapper">
+            <button class="button  button--average" type="button" name="button">Напишите нам</button>
+          </div>
         </div>
         <!-- .Контакты -->
       </div>
@@ -170,9 +172,13 @@
 
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container  container--footer-wrapper">
+        <div class="logo-footer  page-footer__column">
+          <a href="index.html"><img class="logo-footer__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+        </div>
+
         <!-- Социальные кнопки -->
-        <div class="social-links">
+        <div class="social-links  page-footer__column">
           <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
           <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
           <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
@@ -180,7 +186,7 @@
         <!-- .Социальные кнопки -->
 
         <!-- Копирайт -->
-        <div class="copyright">
+        <div class="copyright  page-footer__column">
           <a class="copyright__title" href="https://htmlacademy.ru/" title="Перейти на сайт разработичка">Разработано</a>
         </div>
         <!-- .Копирайт -->
