@@ -1,14 +1,15 @@
 .about {
   padding: 0 30px;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 
   @media #{$tablet} {
     padding: 0;
-    margin-bottom: 145px;
+    margin-bottom: 120px;
   }
 
   @media #{$desktop} {
     margin-left: 175px;
+    margin-bottom: 150px;
   }
 }
 
@@ -29,11 +30,13 @@
 
   @media #{$tablet} {
     max-width: 285px;
-    padding-right: 30px;
+    padding-right: 49px;
+    padding-top: 46px;
   }
 
   @media #{$desktop} {
-    max-width: 350px;
+    max-width: 325px;
+    padding-right: 25px;
   }
 }
 
@@ -61,6 +64,7 @@
   font-weight: bold;
 
   margin: 0;
+  margin-top: 2px;
 
   @media #{$tablet} {
     font-size: 20px;
@@ -69,5 +73,6 @@
 
   @media #{$desktop} {
     padding-left: 0;
+    margin-top: 0;
   }
 }

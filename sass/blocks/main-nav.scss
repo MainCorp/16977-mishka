@@ -1,16 +1,13 @@
 .main-nav__link {
-  font-size: 16px;
-  line-height: 24px;
   text-decoration: none;
   color: #000;
   font-weight: bold;
 
-  padding: 30px 0;
+  padding: 27px 0;
   padding-left: 75px;
   display: block;
 
   @media #{$tablet} {
-    font-size: 14px;
     padding: 0;
   }
 
@@ -23,17 +20,23 @@
 }
 
 .main-nav__items {
+  font-size: 16px;
+  line-height: 24px;
   padding: 0;
   margin: 0;
 
   @media #{$tablet} {
+    font-size: 14px;
+
     position: absolute;
     left: 0;
-    top: 110px;
-    display: inline-flex;
+    top: 107px;
+    display: flex;
   }
 
   @media #{$desktop} {
+    font-size: 16px;
+
     top: 0;
   }
 }
@@ -48,13 +51,13 @@
   @media #{$tablet} {
     padding: 0;
     border: none;
-    padding-right: 30px;
+    padding-right: 40px;
   }
 
   @media #{$desktop} {
     border-right: 1px solid #ececec;
-    padding: 33px 0;
-    padding-right: 35px;
+    padding: 32px 0;
+    padding-right: 36px;
 
     position: relative;
   }
@@ -78,28 +81,39 @@
 
 .main-nav__user-item {
   list-style: none;
+  position: relative;
 
   border: 1px solid #ececec;
   border-left-color: #fff;
   border-right-color: #fff;
 
   @media #{$tablet} {
+    border: none;
     border-left: 1px solid #ececec;
-    padding: 33px 0;
-    padding-left: 75px;
+    padding: 34px 0;
+    padding-left: 77px;
+  }
 
-    position: relative;
+  @media #{$desktop} {
+    padding-left: 78px;
   }
 
   &--search {
 
     &::after {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 27px;
+      width: 18px;
+      height: 18px;
+      background-color: $color-title;
 
       @media #{$tablet} {
         content: "";
         position: absolute;
-        left: 30px;
-        top: 36px;
+        left: 33px;
+        top: 37px;
         width: 18px;
         height: 18px;
         background-color: $color-title;
@@ -113,11 +127,19 @@
 
     &::after {
 
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 27px;
+      width: 18px;
+      height: 18px;
+      background-color: $color-title;
+
       @media #{$tablet} {
         content: "";
         position: absolute;
-        left: 30px;
-        top: 36px;
+        left: 38px;
+        top: 37px;
         width: 18px;
         height: 18px;
         background-color: $color-title;
@@ -150,11 +172,16 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 110px;
+    top: 107px;
 
     font-size: 14px;
     line-height: 24px;
     color: $color-page;
+  }
+
+  @media #{$desktop} {
+    top: 110px;
+    right: 3px;
   }
 }
 
@@ -167,7 +194,8 @@
     margin: 0;
     padding: 0;
     left: 0;
-    top: 105px;
+    top: 112px;
+    font-size: 14px;
   }
 }
 

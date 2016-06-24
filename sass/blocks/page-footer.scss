@@ -1,3 +1,9 @@
 .page-footer {
   background-color: $color-bg;
 }
+
+.page-footer__column {
+  @media #{$tablet} {
+    width: 185px;
+  }
+}

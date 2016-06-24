@@ -19,8 +19,8 @@
   background-color: $color-title;
   padding-left: 28px;
   padding-right: 195px;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 27px;
 
   &--color {
     background-color: $color-title-mod;
@@ -30,7 +30,14 @@
     font-size: 20px;
     line-height: 30px;
 
+    padding-left: 36px;
+
     width: 50%;
+  }
+
+  @media #{$desktop} {
+    padding-right: 320px;
+    padding-left: 38px;
   }
 
 }

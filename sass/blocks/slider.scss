@@ -2,17 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 38px;
+  margin-top: 30px;
 
   @media #{$tablet} {
     position: absolute;
-    right: 0;
-    top: 220px;
+    right: 15px;
+    top: 215px;
   }
 
   @media #{$desktop} {
-    position: absolute;
-    right: 0;
-    top: 240px;
+    top: 220px;
   }
 }
 
@@ -20,4 +19,11 @@
   width: 128px;
   height: 50px;
   border: 1px solid #ececec;
+
+  @media #{$tablet} {
+    width: 60px;
+    height: 27px;
+    font-size: 0;
+    margin-left: 20px;
+  }
 }

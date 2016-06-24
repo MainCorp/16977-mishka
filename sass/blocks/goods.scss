@@ -1,16 +1,21 @@
 .goods {
-
   padding: 0 30px;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
 
   @media #{$tablet} {
     position: relative;
     padding: 0;
-    margin-bottom: 125px;
+    margin-bottom: 115px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 155px;
   }
 }
 
 .goods__headings {
+  padding-bottom: 25px;
+
   @media #{$tablet} {
     display: flex;
     justify-content: space-between;
@@ -58,12 +63,14 @@
     align-self: center;
     text-align: center;
 
-    max-width: 100px;
+    max-width: 120px;
   }
 
   @media #{$desktop} {
     padding: 0 35px;
     padding-right: 40px;
+
+    max-width: 95px;
   }
 }
 
@@ -80,26 +87,32 @@
   line-height: 24px;
   color: $color-page;
 
+  margin: 0;
+  padding-bottom: 17px;
+
   @media #{$tablet} {
     font-size: 16px;
     line-height: 30px;
 
-    margin: 0;
-    margin-bottom: 33px;
+    margin-bottom: 20px;
     max-width: 285px;
   }
 
   @media #{$desktop} {
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 }
 
 .goods__table {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+  }
 
   @media #{$desktop} {
-    padding-bottom: 90px;
+    margin-bottom: 106px;
   }
 }
 
@@ -114,7 +127,7 @@
   color: $color-page;
 
   padding: 10px 0;
-  padding-right: 30px;
+  padding-right: 33px;
 
   @media #{$tablet} {
     font-size: 15px;
@@ -134,14 +147,16 @@
   color: $color-page;
 
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 
   @media #{$tablet} {
     font-size: 18px;
+
+    padding-bottom: 33px;
   }
   @media #{$desktop} {
     padding: 0;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
 }
 
@@ -162,14 +177,14 @@
 }
 
 .goods__picture {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 260px;
   height: 315px;
 
   @media #{$tablet} {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
 
     width: 335px;
     height: 400px;
@@ -181,6 +196,6 @@
   @media #{$desktop} {
     width: 525px;
     height: 635px;
-    top: 0;
+    top: -50px;
   }
 }
