@@ -12,20 +12,32 @@
       <div class="container  page-header__wrapper">
         <!-- Логотип -->
         <div class="logo">
-          <img class="logo__icon" src="http://placehold.it/85x35" alt="логотип Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__icon" src="img/logo-mobile.svg" alt="логотип Mishka">
+          </picture>
         </div>
         <!-- .Логотип -->
 
         <!-- Навигация -->
         <nav class="main-nav  main-nav--closed">
-          <button class="main-nav__toggle" type="button">X</button>
+          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__items">
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html" title="Заказать вязание">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__user-items">
-            <li class="main-nav__user-item  main-nav__user-item--search"><a class="main-nav__link  main-nav__link--hidden" href="#" title="Вы можете найти нужный вам товар в поиске">Поиск по сайту</a></li>
-            <li class="main-nav__user-item  main-nav__user-item--cart"><a class="main-nav__link" href="#" title="Заказать вязание">Корзина: <span class="main-nav__value-cart">пока пуста</span></a></li>
+            <li class="main-nav__user-item  main-nav__user-item--search">
+              <a class="main-nav__link  main-nav__link--hidden" href="#" title="Вы можете найти нужный вам товар в поиске">
+                <img src="img/icon-search.svg" alt="search icon">Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__user-item  main-nav__user-item--cart">
+              <a class="main-nav__link" href="#" title="Заказать вязание">
+                <img src="img/icon-cart.svg" alt="cart icon">Корзина: <span class="main-nav__value-cart">пока пуста</span>
+              </a>
+            </li>
           </ul>
           <ul class="main-nav__attracting">
             <li class="main-nav__attracting-item"><a class="main-nav__link" href="#" title="Узнать о новых поступлениях">Новые поступления</a></li>
@@ -40,83 +52,91 @@
 
     <main class="page-main">
       <!-- Заголовок страницы-->
-      <div class="content-header">
+      <div class="content-header content-header--background">
         <div class="container  container--column">
           <h1 class="content-header__title  content-header__title--indent">Милые штуки ручной работы для дома</h1>
-
-          <!-- Привлекающие ссылки для перехода -->
-          <div class="attracting">
-            <a class="attracting__button" href="#" title="Перейти к списку предметов для интерьера">Предметы интерьера</a>
-            <a class="attracting__button  attracting__button--color" href="#" title="Перейти к списку детских игрушек">Детские игрушки</a>
-          </div>
-          <!-- .Привлекающие ссылки для перехода -->
         </div>
+        <!-- Привлекающие ссылки для перехода -->
+        <div class="container  container--size">
+          <div class="attracting">
+            <a class="attracting__button  attracting__button--decoration" href="#" title="Перейти к списку предметов для интерьера">Предметы<br>интерьера</a>
+            <a class="attracting__button  attracting__button--toys-img  attracting__button--color" href="#" title="Перейти к списку детских игрушек">Детские<br>игрушки</a>
+          </div>
+        </div>
+        <!-- .Привлекающие ссылки для перехода -->
       </div>
       <!-- .Заголовок страницы-->
 
-      <div class="container">
         <!-- Предлагаемый товар недели -->
         <div class="goods">
-          <div class="goods__headings">
-            <h2 class="goods__title">Вязаные корзинки</h2>
-            <p class="goods__subtitle">Товар недели</p>
-          </div>
-          <div class="goods__inner">
-            <div class="goods__wrapper">
-              <p class="goods__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-              <table class="goods__table">
-                <tr class="goods__row">
-                  <td class="goods__data">Цвет:</td>
-                  <td class="goods__data">«Тиффани»/серый</td>
-                </tr>
-                <tr class="goods__row">
-                  <td class="goods__data">Диаметр:</td>
-                  <td class="goods__data">25 см</td>
-                </tr>
-                <tr class="goods__row">
-                  <td class="goods__data">Высота:</td>
-                  <td class="goods__data">15 см</td>
-                </tr>
-              </table>
+          <div class="container">
+            <div class="goods__headings">
+              <h2 class="goods__title">Вязаные корзинки</h2>
+              <p class="goods__subtitle">Товар недели</p>
             </div>
-            <div class="goods__picture">
-              <img src="img/triple-set-mobile@1x.jpg" alt="Изображение товара">
-            </div>
-            <div class="goods__order">
-              <div class="goods__price">Цена: 990 руб.</div>
-              <button class="button" type="button" name="button">Заказать</button>
+            <div class="goods__inner">
+              <div class="goods__wrapper">
+                <p class="goods__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                <table class="goods__table">
+                  <tr class="goods__row">
+                    <td class="goods__data">Цвет:</td>
+                    <td class="goods__data">«Тиффани»/серый</td>
+                  </tr>
+                  <tr class="goods__row">
+                    <td class="goods__data">Диаметр:</td>
+                    <td class="goods__data">25 см</td>
+                  </tr>
+                  <tr class="goods__row">
+                    <td class="goods__data">Высота:</td>
+                    <td class="goods__data">15 см</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="goods__picture">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@1x.jpg 2x">
+                  <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Изображение товара">
+                </picture>
+              </div>
+              <div class="goods__order">
+                <div class="goods__price">Цена: 990 руб.</div>
+                <button class="button" type="button" name="button">Заказать</button>
+              </div>
             </div>
           </div>
         </div>
         <!-- .Предлагаемый товар недели -->
 
         <!-- О нас -->
-        <div class="about">
-          <h2 class="about__title">Коротко о нас:</h2>
-          <div class="about__wrapper">
-            <div class="about__item">
-              <img class="about__picture" src="http://placehold.it/50x50" width="50" height="50" alt="ico">
-              <p class="about__point">Экологически чистые материалы</p>
-            </div>
-            <div class="about__item">
-              <img class="about__picture" src="http://placehold.it/50x50" width="50" height="50" alt="ico">
-              <p class="about__point">Скандинавский стиль по российской цене</p>
-            </div>
-            <div class="about__item">
-              <img class="about__picture" src="http://placehold.it/50x50" width="50" height="50" alt="ico">
-              <p class="about__point">Увеличивает лайки на фотографиях</p>
-            </div>
-            <div class="about__item">
-              <img class="about__picture" src="http://placehold.it/50x50" width="50" height="50" alt="ico">
-              <p class="about__point">Связано вручную с любовью и умилением</p>
-            </div>
-            <div class="about__item">
-              <img class="about__picture" src="http://placehold.it/50x50" width="50" height="50" alt="ico">
-              <p class="about__point">Поддержка отечественного производителя</p>
-            </div>
-            <div class="about__item">
-              <img class="about__picture" src="http://placehold.it/50x50" width="50" height="50" alt="ico">
-              <p class="about__point">Поставляется в подарочной упаковке</p>
+        <div class="container">
+          <div class="about">
+            <h2 class="about__title">Коротко о нас:</h2>
+            <div class="about__wrapper">
+              <div class="about__item">
+                <img class="about__picture" src="img/icon-feature-1.svg" alt="ico">
+                <p class="about__point">Экологически чистые материалы</p>
+              </div>
+              <div class="about__item">
+                <img class="about__picture" src="img/icon-feature-3.svg" alt="ico">
+                <p class="about__point">Скандинавский стиль по российской цене</p>
+              </div>
+              <div class="about__item">
+                <img class="about__picture" src="img/icon-feature-5.svg" alt="ico">
+                <p class="about__point">Увеличивает лайки на фотографиях</p>
+              </div>
+              <div class="about__item">
+                <img class="about__picture" src="img/icon-feature-2.svg" alt="ico">
+                <p class="about__point">Связано вручную с любовью и умилением</p>
+              </div>
+              <div class="about__item">
+                <img class="about__picture" src="img/icon-feature-4.svg" alt="ico">
+                <p class="about__point">Поддержка отечественного производителя</p>
+              </div>
+              <div class="about__item">
+                <img class="about__picture" src="img/icon-feature-6.svg" alt="ico">
+                <p class="about__point">Поставляется в подарочной упаковке</p>
+              </div>
             </div>
           </div>
         </div>
@@ -124,64 +144,71 @@
 
         <!-- Галлерея отзывов -->
         <div class="comments  slider">
-          <h2 class="comments__title">Отзывы</h2>
-          <div class="slider__slides">
-            <!-- Слайд -->
-            <blockquote class="comment slider__item">
-              <p class="comment__text">
-                Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
-              </p>
-              <p class="comment__author">Анастасия Красильникова</p>
-              <a class="comment__nickname" href="#" title="Перейти в профиль пользователя @misssssiskras">@misssssiskras</a>
-            </blockquote>
-            <!-- .Слайд -->
+          <div class="container  container--flex  container--comment-column">
+            <h2 class="comments__title">Отзывы</h2>
+            <div class="slider__slides">
+              <!-- Слайд -->
+              <blockquote class="comment slider__item">
+                <p class="comment__text">
+                  Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+                </p>
+                <p class="comment__author">Анастасия Красильникова</p>
+                <a class="comment__nickname" href="#" title="Перейти в профиль пользователя @misssssiskras">@misssssiskras</a>
+              </blockquote>
+              <!-- .Слайд -->
+            </div>
+            <div class="slider__controls">
+              <a class="slider__control  slider__control--prev" href="#" title="Предыдущий слайд">Предыдущий слайд</a>
+              <a class="slider__control  slider__control--next" href="#" title="Следующий слайд">Следующий слайд</a>
+            </div>
+            <button class="button  button--regime" type="button" name="button">Написать</button>
           </div>
-          <div class="slider__controls">
-            <a class="slider__control  slider__control--prev" href="#" title="Предыдущий слайд">Предыдущий слайд</a>
-            <a class="slider__control  slider__control--next" href="#" title="Следующий слайд">Следующий слайд</a>
-          </div>
-          <button class="button  button--regime" type="button" name="button">Написать</button>
         </div>
         <!-- .Галлерея отзывов -->
 
         <!-- Контакты -->
-        <div class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__wrapper">
-            <div class="contacts__row">
-              <p class="contacts__date">e-mail:</p>
-              <p class="contacts__date"><a class="contacts__link" href="mailto:info@mimimishkashop.ru" title="Написать нам">info@mimimishkashop.ru</a></p>
+        <div class="container">
+          <div class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__wrapper">
+              <div class="contacts__row">
+                <p class="contacts__date">e-mail:</p>
+                <p class="contacts__date"><a class="contacts__link" href="mailto:info@mimimishkashop.ru" title="Написать нам">info@mimimishkashop.ru</a></p>
+              </div>
+              <div class="contacts__row">
+                <p class="contacts__date">адрес:</p>
+                <p class="contacts__date">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+              </div>
             </div>
-            <div class="contacts__row">
-              <p class="contacts__date">адрес:</p>
-              <p class="contacts__date">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-            </div>
-          </div>
 
-          <div class="contacts__map">
-            <img src="img/map-mobile@1x.jpg" alt="Как до нас добраться">
-          </div>
-          <div class="button__wrapper">
-            <button class="button  button--average" type="button" name="button">Напишите нам</button>
+            <div class="contacts__map">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+                <img src="img/map-mobile@1x.jpg" alt="Как до нас добраться">
+              </picture>
+            </div>
+            <div class="button__wrapper">
+              <button class="button  button--average" type="button" name="button">Напишите нам</button>
+            </div>
           </div>
         </div>
         <!-- .Контакты -->
-      </div>
     </main>
 
 
     <footer class="page-footer">
       <div class="container  container--footer-wrapper">
         <div class="logo-footer  page-footer__column">
-          <a href="index.html"><img class="logo-footer__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+          <a href="index.html"><img class="logo-footer__icon" src="img/logo-footer.svg" alt="логотип Mishka"></a>
         </div>
 
         <!-- Социальные кнопки -->
         <div class="social-links  page-footer__column">
-          <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
-          <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
-          <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
+          <a href="#" class="social-link" title="Перейти в нашу группу в Instagram."><img src="img/icon-insta.svg" alt="Instagram"></a>
+          <a href="#" class="social-link" title="Перейти в группу Facebook."><img src="img/icon-fb.svg" alt="Facebook"></a>
+          <a href="#" class="social-link" title="Прочитать новости о нас в Twitter."><img src="img/icon-twitter.svg" alt="Twitter"></a>
         </div>
         <!-- .Социальные кнопки -->
 

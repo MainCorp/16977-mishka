@@ -11,7 +11,7 @@
 }
 
 .attracting__button {
-  font-family: "Tahoma";
+  font-family: $Tahoma;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
@@ -20,13 +20,12 @@
 
   background-color: $color-title;
   padding-left: 28px;
-  padding-right: 195px;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-bottom: 27px;
 
-  &--color {
-    background-color: $color-title-mod;
-  }
+  position: relative;
+  max-width: 320px;
+
 
   @media #{$tablet} {
     font-size: 20px;
@@ -40,6 +39,39 @@
   @media #{$desktop} {
     padding-right: 320px;
     padding-left: 38px;
+    padding-bottom: 40px;
+  }
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &--color {
+    background-color: $color-title-mod;
+  }
+
+  &--color:hover {
+    background-color: #46c1ae;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 65px;
+    width: 60px;
+    right: 30px;
+    top: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--decoration::after {
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &--toys-img::after {
+    background-image: url("../img/icon-toy.svg");
   }
 
 }

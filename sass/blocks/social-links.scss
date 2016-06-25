@@ -17,10 +17,11 @@
 .social-link {
   width: 30px;
   height: 30px;
-  background-color: $color-title;
   margin-top: 25px;
 
   font-size: 0;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media #{$tablet} {
     margin: 0;

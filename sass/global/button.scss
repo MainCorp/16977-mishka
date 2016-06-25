@@ -9,6 +9,7 @@
   background-color: #fff;
   border: 2px solid $color-page;
   padding: 16px 0;
+  outline: 0;
   width: 100%;
 
   max-width: 288px;
@@ -37,6 +38,14 @@
       max-height: 50px;
       margin-top: 11px;
     }
+  }
+
+  &:hover {
+    background-color: $color-page;
+    color: #fff;
+  }
+  &:active {
+
   }
 }
 

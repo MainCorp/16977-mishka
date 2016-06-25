@@ -1,5 +1,13 @@
 .product {
-  border: 1px solid #ededed;
+  outline: 1px solid #ededed;
+
+  &:hover {
+    box-shadow: 0 5px 10px #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 3px 10px #ececec;
+  }
 
   margin: 0 0 28px;
 
@@ -42,23 +50,20 @@
 .product__picture {
   margin: 0;
   width: 260px;
-  height: 195px;
 
   @media #{$tablet} {
     width: 334px;
-    height: 330px;
-    background-color: blue;
     text-align: center;
     flex-shrink: 0;
   }
 
   @media #{$desktop} {
     width: 315px;
-    height: 462px;
   }
 }
 
 .product__picture img {
+  display: block;
   width: 100%;
 }
 
@@ -120,12 +125,4 @@
   @media #{$tablet} {
     font-size: 16px;
   }
-}
-
-.product__purchase {
-  display: block;
-  width: 20px;
-  height: 20px;
-
-  background-color: $color-title;
 }

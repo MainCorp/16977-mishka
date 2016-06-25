@@ -1,0 +1,31 @@
+img {
+  max-width: 100%;
+}
+
+@mixin retina-bg($image, $format) {
+  background-image: url("../img/#{$image}@1x.#{$format}");
+  @media #{$retina} {
+    background-image: url("../img/#{$image}@2x.#{$format}");
+  }
+}
+
+@mixin zigzag-line($height-mobile, $height-tablet, $height-desktop) {
+  content: "";
+  position: absolute;
+  height: #{$height-mobile}px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media #{$tablet} {
+    height: #{$height-tablet}px;
+  }
+  @media #{$desktop} {
+    height: #{$height-desktop}px;
+  }
+}

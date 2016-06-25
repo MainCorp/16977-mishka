@@ -12,20 +12,34 @@
       <div class="container  page-header__wrapper">
         <!-- Логотип -->
         <div class="logo">
-          <a href="index.html"><img class="logo__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__icon" src="img/logo-mobile.svg" alt="логотип Mishka">
+            </picture>
+          </a>
         </div>
         <!-- .Логотип -->
 
         <!-- Навигация -->
         <nav class="main-nav  main-nav--closed">
-          <button class="main-nav__toggle" type="button">X</button>
+          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a class="main-nav__link" title="Перейти в каталог товаров">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html" title="Заказать вязание">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__user-items">
-            <li class="main-nav__user-item  main-nav__user-item--search"><a class="main-nav__link  main-nav__link--hidden" href="#" title="Вы можете найти нужный вам товар в поиске">Поиск по сайту</a></li>
-            <li class="main-nav__user-item  main-nav__user-item--cart"><a class="main-nav__link" href="#" title="Заказать вязание">Корзина: <span class="main-nav__value-cart">пока пуста</span></a></li>
+            <li class="main-nav__user-item  main-nav__user-item--search">
+              <a class="main-nav__link  main-nav__link--hidden" href="#" title="Вы можете найти нужный вам товар в поиске">
+                <img src="img/icon-search.svg" alt="search icon">Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__user-item  main-nav__user-item--cart">
+              <a class="main-nav__link" href="#" title="Заказать вязание">
+                <img src="img/icon-cart.svg" alt="cart icon">Корзина: <span class="main-nav__value-cart">пока пуста</span>
+              </a>
+            </li>
           </ul>
           <ul class="main-nav__attracting">
             <li class="main-nav__attracting-item"><a class="main-nav__link" href="#" title="Узнать о новых поступлениях">Новые поступления</a></li>
@@ -51,42 +65,60 @@
         <section class="catalog">
           <article class="product">
             <figure class="product__picture">
-              <img src="img/photo-1-mobile@1x.jpg" alt="Изображение товара">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Изображение товара">
+              </picture>
             </figure>
             <div class="product__wrapper">
               <h1 class="product__title">Зайчик-попрыгайчик</h1>
               <p class="product__characteristic">Рост 30 см, вес 200 г</p>
               <div class="product__cost">
                 <div class="product__price">1 200 руб.</div>
-                <a class="product__purchase" href="#" title="Купить товар"></a>
+                <a class="product__purchase" href="#" title="Купить товар">
+                  <img src="img/icon-cart.svg" alt="by">
+                </a>
               </div>
             </div>
           </article>
 
           <article class="product">
             <figure class="product__picture">
-              <img src="img/photo-2-mobile@1x.jpg" alt="Изображение товара">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Изображение товара">
+              </picture>
             </figure>
             <div class="product__wrapper">
               <h1 class="product__title">Корзинка для белья</h1>
               <p class="product__characteristic">Диаметр 15 см, высота 10 см</p>
               <div class="product__cost">
                 <div class="product__price">690 руб.</div>
-                <a class="product__purchase" href="#" title="Купить товар"></a>
+                <a class="product__purchase" href="#" title="Купить товар">
+                  <img src="img/icon-cart.svg" alt="by">
+                </a>
               </div>
             </div>
           </article>
 
           <article class="product">
             <figure class="product__picture">
-              <img src="img/photo-3-mobile@1x.jpg" alt="Изображение товара">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Изображение товара">
+              </picture>
             </figure>
             <div class="product__wrapper">
               <h1 class="product__title">Большая корзинка для игрушек</h1>
               <p class="product__characteristic">Диаметр 30 см, высота 30 см</p>
               <div class="product__cost">
                 <div class="product__price">1 500 руб.</div>
-                <a class="product__purchase" href="#" title="Купить товар"></a>
+                <a class="product__purchase" href="#" title="Купить товар">
+                  <img src="img/icon-cart.svg" alt="by">
+                </a>
               </div>
             </div>
           </article>
@@ -97,7 +129,11 @@
         <article class="production">
           <h1 class="production__title">Процесс производства</h1>
           <div class="production__video">
-            <img src="img/video-mobile@1x.jpg" alt="Посмотреть видео о нашем производстве">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Изображение товара">
+            </picture>
           </div>
           <div class="production__wrapper">
             <p class="production__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -112,14 +148,14 @@
     <footer class="page-footer">
       <div class="container  container--footer-wrapper">
         <div class="logo-footer  page-footer__column">
-          <a href="index.html"><img class="logo-footer__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+          <a href="index.html"><img class="logo-footer__icon" src="img/logo-footer.svg" alt="логотип Mishka"></a>
         </div>
 
         <!-- Социальные кнопки -->
         <div class="social-links  page-footer__column">
-          <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
-          <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
-          <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
+          <a href="#" class="social-link" title="Перейти в нашу группу в Instagram."><img src="img/icon-insta.svg" alt="Instagram"></a>
+          <a href="#" class="social-link" title="Перейти в группу Facebook."><img src="img/icon-fb.svg" alt="Facebook"></a>
+          <a href="#" class="social-link" title="Прочитать новости о нас в Twitter."><img src="img/icon-twitter.svg" alt="Twitter"></a>
         </div>
         <!-- .Социальные кнопки -->
 
