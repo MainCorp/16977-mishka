@@ -1,10 +1,12 @@
 .attracting {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 
 
   @media #{$tablet} {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 

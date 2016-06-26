@@ -1,11 +1,9 @@
 .comments {
-  padding: 0 30px;
   margin-bottom: 89px;
 
   position: relative;
 
   @media #{$tablet} {
-    padding: 0;
     margin-bottom: 240px;
 
     display: flex;

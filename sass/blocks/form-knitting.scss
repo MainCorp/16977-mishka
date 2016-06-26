@@ -32,7 +32,7 @@
     padding-top: 70px;
 
     display: flex;
-    
+
 
     &--repainting {
       background-color: $color-bg;
@@ -46,8 +46,7 @@
 
     &--stick {
       @media #{$tablet} {
-        padding: 0;
-        padding: 50px 0;
+        padding: 20px 0;
       }
     }
   }
@@ -61,11 +60,13 @@
 
   margin: 0;
 
-  @media #{$desktop} {
-    padding: 0 175px;
-
+  @media #{$tablet} {
     font-size: 16px;
     line-height: 30px;
+  }
+
+  @media #{$desktop} {
+    padding: 0 175px;
   }
 }
 
@@ -89,6 +90,10 @@
   @media #{$desktop} {
     width: 175px;
     text-align: center;
+  }
+
+  &--stick {
+    padding-bottom: 5px;
   }
 
   &::after {
@@ -115,5 +120,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    font-size: 16px;
+    line-height: 30px;
   }
 }

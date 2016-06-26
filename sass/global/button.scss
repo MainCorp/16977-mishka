@@ -18,7 +18,10 @@
   }
 
   &--average {
-    max-width: 228px;
+
+    @media #{$tablet} {
+      max-width: 228px;
+    }
   }
 
   &--regime {

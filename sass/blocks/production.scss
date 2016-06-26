@@ -1,7 +1,6 @@
 .production {
-  margin: 0 30px;
-  padding-bottom: 30px;
-  margin-bottom: 55px;
+  margin: 0 0 58px;
+  padding-bottom: 33px;
   border: 1px solid #ededed;
 
   @media #{$tablet} {
@@ -9,7 +8,7 @@
     flex-wrap: wrap;
 
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 75px;
   }
 
   @media #{$desktop} {
@@ -22,9 +21,11 @@
 
 .production__wrapper {
   padding: 0 35px;
+  margin-top: 25px;
 
   @media #{$tablet} {
     padding: 0 40px;
+    margin-top: 0;
   }
 
   @media #{$desktop} {
@@ -38,11 +39,14 @@
   font-weight: bold;
 
   margin: 0;
-  padding: 25px 0;
-  padding-left: 90px;
+  padding: 24px;
+  padding-left: 88px;
+
+  position: relative;
 
   @media #{$tablet} {
     font-size: 18px;
+    padding-left: 105px;
   }
   @media #{$desktop} {
     align-self: flex-end;
@@ -51,10 +55,17 @@
     padding-right: 145px;
     padding-top: 90px;
     padding-bottom: 30px;
-    position: relative;
   }
 
   &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background: $color-title;
+    top: 25px;
+    left: 43px;
+
     @media #{$desktop} {
       content: "";
       position: absolute;
@@ -72,16 +83,19 @@
   font-size: 14px;
   line-height: 24px;
   color: $color-page;
+  padding-bottom: 10px;
 
   @media #{$tablet} {
     font-size: 16px;
     line-height: 30px;
+    margin: 0;
+    padding-top: 9px;
+    padding-bottom: 33px;
   }
 
   @media #{$desktop} {
     font-size: 16px;
     line-height: 30px;
-    margin: 0;
     padding-bottom: 50px;
   }
 }
@@ -93,6 +107,7 @@
   @media #{$tablet} {
     width: 668px;
     height: 453px;
+    margin-bottom: 15px;
 
     background-color: blue;
     text-align: center;
@@ -103,6 +118,7 @@
   @media #{$desktop} {
     width: 680px;
     height: 455px;
+    margin-bottom: 0;
 
     position: absolute;
     z-index: -10;

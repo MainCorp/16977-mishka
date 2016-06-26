@@ -1,9 +1,7 @@
 .contacts {
-  padding: 0 30px;
   margin-bottom: 40px;
 
   @media #{$tablet} {
-    padding: 0;
     margin-bottom: 58px;
   }
 
@@ -113,6 +111,11 @@
     max-width: 300px;
     margin-bottom: 30px;
   }
+}
+
+.contacts__date:nth-child(1) {
+  flex-basis: 80px;
+  flex-shrink: 0;
 }
 
 .contacts__row:nth-child(2) {

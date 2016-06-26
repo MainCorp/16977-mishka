@@ -1,5 +1,5 @@
 .container {
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
 
   @media #{$tablet} {
@@ -10,12 +10,21 @@
     width: 1050px;
   }
 
-  &--favour {
+  &--footer-wrapper {
+    @media #{$tablet} {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 0;
+    }
+  }
+
+  &--flex {
     @media #{$tablet} {
       display: flex;
       flex-wrap: wrap;
       position: relative;
     }
+
   }
 
   &--footer-wrapper {
@@ -27,8 +36,7 @@
   }
 
 }
-
-.container__wrapper {
+.container--column {
   display: flex;
   flex-direction: column;
 }

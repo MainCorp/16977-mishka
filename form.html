@@ -41,7 +41,7 @@
     <main class="page-main">
       <!-- Заголовок страницы-->
       <div class="content-header">
-        <div class="container  container__wrapper">
+        <div class="container  container--column">
           <h1 class="content-header__title">Вязание на заказ</h1>
         </div>
       </div>
@@ -49,14 +49,14 @@
 
         <!-- Форма заказа вязания вещей -->
         <form class="form-knitting" action="#" method="get">
-          <div class="container">
+          <div class="container  container--flex">
             <p class="form-knitting__council">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
           </div>
 
 
           <!-- Раздел ТИП -->
           <section class="form-knitting__set">
-            <div class="container container--favour">
+            <div class="container  container--flex">
               <div class="form-knitting__title">Тип</div>
               <div class="form-knitting__wrapper">
                 <label class="radio">
@@ -76,7 +76,7 @@
 
           <!-- Раздел ЦВЕТ -->
             <section class="form-knitting__set  form-knitting__set--repainting">
-              <div class="container  container--favour">
+              <div class="container  container--flex">
                 <div class="form-knitting__title">Цвет</div>
                 <div class="form-knitting__wrapper">
                   <label class="checkbox">
@@ -116,7 +116,7 @@
 
           <!-- Раздел ФИО -->
           <section class="form-knitting__set">
-            <div class="container  container--favour">
+            <div class="container  container--flex">
               <div class="form-knitting__title">ФИО</div>
               <div class="form-knitting__wrapper">
                 <label class="input">
@@ -138,23 +138,23 @@
 
           <!-- Раздел с вводом номера телефона -->
             <section class="form-knitting__set  form-knitting__set--repainting  form-knitting__set--stick">
-                <div class="container  container--favour">
-                  <div class="form-knitting__title  form-knitting__title--stick">Тел</div>
-                  <div class="form-knitting__wrapper">
-                    <label class="input">
-                      <input class="input__value  input__value--stick" type="tel" name="tel" placeholder="+7 ХХХ XXX ХХ ХХ" required>
-                    </label>
-                  </div>
+              <div class="container  container--flex">
+                <div class="form-knitting__title  form-knitting__title--stick">Тел</div>
+                <div class="form-knitting__wrapper">
+                  <label class="input  input--stick">
+                    <input class="input__value  input__value--stick" type="tel" name="tel" placeholder="+7 ХХХ XXX ХХ ХХ" required>
+                  </label>
                 </div>
+              </div>
             </section>
           <!-- .Раздел с вводом номера телефона -->
 
           <!-- Раздел с вводом электронной почты -->
             <section class="form-knitting__set  form-knitting__set--repainting  form-knitting__set--stick">
-              <div class="container  container--favour">
+              <div class="container  container--flex">
                 <div class="form-knitting__title  form-knitting__title--stick">E-mail</div>
                 <div class="form-knitting__wrapper">
-                  <label class="input">
+                  <label class="input  input--stick">
                     <input class="input__value  input__value--stick" type="email" name="email" placeholder="Ваш e-mail" required>
                   </label>
                 </div>
@@ -164,18 +164,20 @@
 
           <!-- Раздел с вводом пожеланий -->
           <section class="form-knitting__set">
-            <div class="container  container--favour">
-              <div class="form-knitting__title">Доп</div>
-              <div class="form-knitting__wrapper">
-                <label class="input">
-                  <textarea class="input__value  input__value--frame" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-                </label>
+            <div class="container">
+              <div class="container--flex">
+                <div class="form-knitting__title">Доп</div>
+                <div class="form-knitting__wrapper">
+                  <label class="input">
+                    <textarea class="input__value  input__value--frame" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  </label>
+                </div>
               </div>
             </div>
           </section>
           <!-- .Раздел с вводом пожеланий -->
 
-          <div class="container  container--favour">
+          <div class="container container--flex">
             <button class="button  button--average" type="button" name="knitting-button">Отправить заказ</button>
             <div class="form-knitting__delivery">Все поля являются обязательными</div>
           </div>
@@ -186,9 +188,13 @@
 
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container  container--footer-wrapper">
+        <div class="logo-footer  page-footer__column">
+          <a href="index.html"><img class="logo-footer__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+        </div>
+
         <!-- Социальные кнопки -->
-        <div class="social-links">
+        <div class="social-links  page-footer__column">
           <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
           <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
           <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
@@ -196,7 +202,7 @@
         <!-- .Социальные кнопки -->
 
         <!-- Копирайт -->
-        <div class="copyright">
+        <div class="copyright  page-footer__column">
           <a class="copyright__title" href="https://htmlacademy.ru/" title="Перейти на сайт разработичка">Разработано</a>
         </div>
         <!-- .Копирайт -->

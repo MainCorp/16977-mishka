@@ -1,11 +1,17 @@
 .input {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 17px;
 
 
   @media #{$tablet} {
+    margin-bottom: 15px;
     width: 100%;
     justify-content: space-between;
+  }
+
+  &--stick {
+    margin-bottom: 0;
   }
 }
 
@@ -14,6 +20,7 @@
   font-size: 16px;
   line-height: 19px;
   font-weight: bold;
+  padding-top: 5px;
 
   @media #{$tablet} {
     padding-top: 20px;
@@ -26,13 +33,14 @@
 .input__value {
   border: none;
   border-bottom: 2px solid #000;
-  padding: 19px 0;
+  padding: 18px 0;
   width: 100%;
 
   @media #{$tablet} {
     width: 70%;
     font-size: 18px;
     line-height: 18px;
+    background: transparent;
   }
 
   &--stick {
@@ -45,7 +53,9 @@
   &--frame {
     margin-bottom: 50px;
     width: 100%;
-    min-height: 140px;
+    min-height: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   &:hover {

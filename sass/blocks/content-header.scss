@@ -4,19 +4,11 @@
   margin-bottom: 30px;
 
   @media #{$tablet} {
-    margin-bottom: 45px;
+    margin-bottom: 78px;
   }
 
   @media #{$desktop} {
-    margin-bottom: 125px;
-  }
-
-  &--background {
-
-    @media #{$tablet} {
-
-    }
-
+    margin-bottom: 136px;
   }
 }
 
@@ -24,15 +16,14 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  padding: 70px 30px;
-  padding-bottom: 2px;
+  padding: 57px 30px;
   text-align: center;
 
   @media #{$tablet} {
     font-size: 40px;
     line-height: 50px;
-    padding-top: 125px;
-    padding-bottom: 6px;
+    padding-top: 65px;
+
   }
 
   @media #{$desktop} {
@@ -41,11 +32,13 @@
   }
 
   &--indent {
+    padding: 70px 30px 5px;
     margin-bottom: 120px;
 
     @media #{$tablet} {
       font-size: 40px;
       line-height: 50px;
+      padding-top: 125px;
       margin-bottom: 370px;
     }
 
