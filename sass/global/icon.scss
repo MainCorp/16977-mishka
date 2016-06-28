@@ -1,0 +1,11 @@
+.icon-state {
+  color: black;
+
+  &:hover {
+    color: #63d1bb;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}
