@@ -1,14 +1,22 @@
 .goods {
-  margin-bottom: 70px;
+  padding-bottom: 45px;
+  margin-bottom: 30px;
+  position: relative;
 
   @media #{$tablet} {
     position: relative;
-    padding: 0;
-    margin-bottom: 115px;
+    padding-bottom: 65px;
+    margin-bottom: 50px;
+
   }
 
   @media #{$desktop} {
-    margin-bottom: 155px;
+    padding-bottom: 93px;
+    margin-bottom: 60px;
+  }
+
+  &::after {
+    @include zigzag-line("6","15","23");
   }
 }
 
@@ -24,16 +32,16 @@
   @media #{$desktop} {
     justify-content: flex-end;
     flex-direction: row-reverse;
+    padding-bottom: 40px;
   }
 }
 
 .goods__title {
-  font-size: 24px;
+  font-size: 23px;
   line-height: 30px;
   font-weight: bold;
 
-  margin: 0;
-  padding-bottom: 5px;
+  margin: 0 0 7px;
 
   @media #{$tablet} {
     font-size: 40px;
@@ -87,7 +95,7 @@
   color: $color-page;
 
   margin: 0;
-  padding-bottom: 17px;
+  margin-bottom: 15px;
 
   @media #{$tablet} {
     font-size: 16px;
@@ -99,7 +107,7 @@
 
   @media #{$desktop} {
     margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -111,7 +119,7 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 106px;
+    margin-bottom: 85px;
   }
 }
 
@@ -125,11 +133,15 @@
   line-height: 20px;
   color: $color-page;
 
-  padding: 10px 0;
+  padding: 9px 0 10px;
   padding-right: 33px;
 
   @media #{$tablet} {
     font-size: 15px;
+  }
+
+  &:nth-child(2) {
+    padding-right: 0;
   }
 }
 
@@ -151,7 +163,9 @@
   @media #{$tablet} {
     font-size: 18px;
 
-    padding-bottom: 33px;
+    padding-left: 10px;
+    padding-bottom: 35px;
+    margin-top: 20px;
   }
   @media #{$desktop} {
     padding: 0;
@@ -172,6 +186,7 @@
     display: flex;
     flex-direction: column;
     padding-right: 585px;
+    position: relative;
   }
 }
 
@@ -185,16 +200,15 @@
     right: 0;
     top: 10px;
 
-    width: 335px;
-    height: 400px;
+    width: 333px;
+    height: 404px;
     text-align: center;
-    background-color: blue;
     z-index: -10
   }
 
   @media #{$desktop} {
     width: 525px;
-    height: 635px;
-    top: -50px;
+    height: 636px;
+    top: -155px;
   }
 }

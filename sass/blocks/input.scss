@@ -16,7 +16,7 @@
 }
 
 .input__title {
-  font-family: "Verdana";
+  font-family: $Verdana;
   font-size: 16px;
   line-height: 19px;
   font-weight: bold;
@@ -26,24 +26,35 @@
     padding-top: 20px;
     font-size: 18px;
     line-height: 18px;
+    flex-shrink: 0;
+    padding-right: 17px;
   }
 
 }
 
 .input__value {
+  font-family: $Verdana;
+  font-size: 16px;
+  line-height: 19px;
   border: none;
   border-bottom: 2px solid #000;
-  padding: 18px 0;
+  padding: 19px 0;
+  padding-right: 30px;
   width: 100%;
+  outline: 0;
+
+  position: relative;
 
   @media #{$tablet} {
     width: 70%;
+    flex-grow: 1;
     font-size: 18px;
     line-height: 18px;
     background: transparent;
   }
 
   &--stick {
+    padding-top: 0;
     @media #{$tablet} {
       padding: 19px 20px;
       width: 100%;
@@ -51,11 +62,20 @@
   }
 
   &--frame {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 100%;
     min-height: 110px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+
+    @media #{$tablet} {
+      margin-bottom: 15px;
+      min-height: 100px;
+    }
+
+    @media #{$desktop} {
+      margin-bottom: 50px;
+      min-height: 100px;
+    }
   }
 
   &:hover {

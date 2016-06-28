@@ -16,6 +16,7 @@
     position: relative;
     padding-bottom: 60px;
     margin-bottom: 105px;
+    min-height: 395px;
   }
 }
 
@@ -39,9 +40,8 @@
   font-weight: bold;
 
   margin: 0;
-  padding: 24px;
-  padding-left: 88px;
-
+  padding: 25px 0;
+  padding-left: 90px;
   position: relative;
 
   @media #{$tablet} {
@@ -61,17 +61,18 @@
     content: "";
     position: absolute;
     width: 30px;
-    height: 20px;
-    background: $color-title;
-    top: 25px;
-    left: 43px;
+    height: 30px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 30px;
+
+    @media #{$tablet} {
+      top:25px;
+      left: 42px;
+    }
 
     @media #{$desktop} {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 20px;
-      background: $color-title;
       top: 45px;
       left: 0;
     }
@@ -103,13 +104,13 @@
 .production__video {
   width: 260px;
   height: 150px;
+  position: relative;
 
   @media #{$tablet} {
     width: 668px;
     height: 453px;
     margin-bottom: 15px;
 
-    background-color: blue;
     text-align: center;
 
     order: -1;
@@ -122,5 +123,21 @@
 
     position: absolute;
     z-index: -10;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 77px;
+    left: 81px;
+    top: 40px;
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+
+    @media #{$tablet} {
+      left: 285px;
+      top: 195px;
+    }
   }
 }

@@ -1,19 +1,21 @@
 .comments {
-  margin-bottom: 89px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
 
   position: relative;
 
   @media #{$tablet} {
-    margin-bottom: 240px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding-bottom: 80px;
+    min-height: 460px;
   }
 
   @media #{$desktop} {
-    margin-left: 175px;
-    margin-bottom: 330px;
+    padding-bottom: 90px;
+    margin-bottom: 140px;
+  }
+
+  &::after {
+    @include zigzag-line("6","15","23");
   }
 }
 
@@ -68,7 +70,7 @@
   font-weight: bold;
 
   margin: 0;
-  margin-top: 20px;
+  margin-top: 18px;
 
   @media #{$tablet} {
     font-size: 16px;

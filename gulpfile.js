@@ -13,6 +13,7 @@ gulp.task("style", function() {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({browsers: [
+        "iOS >= 7",
         "last 1 version",
         "last 2 Chrome versions",
         "last 2 Firefox versions",

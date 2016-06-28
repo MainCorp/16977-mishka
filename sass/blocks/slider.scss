@@ -7,11 +7,8 @@
   @media #{$tablet} {
     position: absolute;
     right: 15px;
-    top: 215px;
-  }
-
-  @media #{$desktop} {
-    top: 220px;
+    bottom: 13px;
+    margin-bottom: 0;
   }
 }
 
@@ -19,11 +16,25 @@
   width: 128px;
   height: 50px;
   border: 1px solid #ececec;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+
+  position: relative;
 
   @media #{$tablet} {
     width: 60px;
     height: 27px;
     font-size: 0;
     margin-left: 20px;
+    border: none;
+  }
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
   }
 }

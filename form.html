@@ -12,20 +12,34 @@
       <div class="container  page-header__wrapper">
         <!-- Логотип -->
         <div class="logo">
-          <a href="index.html"><img class="logo__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__icon" src="img/logo-mobile.svg" alt="логотип Mishka">
+            </picture>
+          </a>
         </div>
         <!-- .Логотип -->
 
         <!-- Навигация -->
         <nav class="main-nav  main-nav--closed">
-          <button class="main-nav__toggle" type="button">X</button>
+          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__items">
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" title="Заказать вязание">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html" title="Заказать вязание">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__user-items">
-            <li class="main-nav__user-item  main-nav__user-item--search"><a class="main-nav__link  main-nav__link--hidden" href="#" title="Вы можете найти нужный вам товар в поиске">Поиск по сайту</a></li>
-            <li class="main-nav__user-item  main-nav__user-item--cart"><a class="main-nav__link" href="#" title="Заказать вязание">Корзина: <span class="main-nav__value-cart">пока пуста</span></a></li>
+            <li class="main-nav__user-item  main-nav__user-item--search">
+              <a class="main-nav__link  main-nav__link--hidden" href="#" title="Вы можете найти нужный вам товар в поиске">
+                <img src="img/icon-search.svg" alt="search icon">Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__user-item  main-nav__user-item--cart">
+              <a class="main-nav__link" href="#" title="Заказать вязание">
+                <img src="img/icon-cart.svg" alt="cart icon">Корзина: <span class="main-nav__value-cart">пока пуста</span>
+              </a>
+            </li>
           </ul>
           <ul class="main-nav__attracting">
             <li class="main-nav__attracting-item"><a class="main-nav__link" href="#" title="Узнать о новых поступлениях">Новые поступления</a></li>
@@ -78,7 +92,7 @@
             <section class="form-knitting__set  form-knitting__set--repainting">
               <div class="container  container--flex">
                 <div class="form-knitting__title">Цвет</div>
-                <div class="form-knitting__wrapper">
+                <div class="form-knitting__wrapper  form-knitting__wrapper--color">
                   <label class="checkbox">
                     <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Белый" checked>
                     <span class="checkbox__title">Белый</span>
@@ -115,17 +129,17 @@
           <!-- .Раздел ЦВЕТ -->
 
           <!-- Раздел ФИО -->
-          <section class="form-knitting__set">
+          <section class="form-knitting__set  form-knitting__set--full-name">
             <div class="container  container--flex">
               <div class="form-knitting__title">ФИО</div>
               <div class="form-knitting__wrapper">
                 <label class="input">
                   <span class="input__title">Фамилия:</span>
-                  <input class="input__value" type="text" name="fields" placeholder="Укажите фамилию" required>
+                  <input class="input__value" type="text" name="fields" placeholder="Укажите фамилию">
                 </label>
                 <label class="input">
                   <span class="input__title">Имя:</span>
-                  <input class="input__value" type="text" name="fields" placeholder="Введите ваше имя" required>
+                  <input class="input__value" type="text" name="fields" placeholder="Введите ваше имя">
                 </label>
                 <label class="input">
                   <span class="input__title">Отчество:</span>
@@ -137,12 +151,12 @@
           <!-- Раздел ФИО -->
 
           <!-- Раздел с вводом номера телефона -->
-            <section class="form-knitting__set  form-knitting__set--repainting  form-knitting__set--stick">
+            <section class="form-knitting__set  form-knitting__set--repainting  form-knitting__set--tel">
               <div class="container  container--flex">
                 <div class="form-knitting__title  form-knitting__title--stick">Тел</div>
                 <div class="form-knitting__wrapper">
                   <label class="input  input--stick">
-                    <input class="input__value  input__value--stick" type="tel" name="tel" placeholder="+7 ХХХ XXX ХХ ХХ" required>
+                    <input class="input__value  input__value--tel-bg  input__value--stick" type="tel" name="tel" placeholder="+7 ХХХ XXX ХХ ХХ">
                   </label>
                 </div>
               </div>
@@ -150,12 +164,12 @@
           <!-- .Раздел с вводом номера телефона -->
 
           <!-- Раздел с вводом электронной почты -->
-            <section class="form-knitting__set  form-knitting__set--repainting  form-knitting__set--stick">
+            <section class="form-knitting__set  form-knitting__set--repainting  form-knitting__set--email">
               <div class="container  container--flex">
                 <div class="form-knitting__title  form-knitting__title--stick">E-mail</div>
                 <div class="form-knitting__wrapper">
                   <label class="input  input--stick">
-                    <input class="input__value  input__value--stick" type="email" name="email" placeholder="Ваш e-mail" required>
+                    <input class="input__value  input__value--email-bg  input__value--stick" type="email" name="email" placeholder="Ваш e-mail">
                   </label>
                 </div>
               </div>
@@ -163,7 +177,7 @@
           <!-- .Раздел с вводом электронной почты -->
 
           <!-- Раздел с вводом пожеланий -->
-          <section class="form-knitting__set">
+          <section class="form-knitting__set  form-knitting__set--frame">
             <div class="container">
               <div class="container--flex">
                 <div class="form-knitting__title">Доп</div>
@@ -190,14 +204,14 @@
     <footer class="page-footer">
       <div class="container  container--footer-wrapper">
         <div class="logo-footer  page-footer__column">
-          <a href="index.html"><img class="logo-footer__icon" src="http://placehold.it/85x35" alt="логотип Mishka"></a>
+          <a href="index.html"><img class="logo-footer__icon" src="img/logo-footer.svg" alt="логотип Mishka"></a>
         </div>
 
         <!-- Социальные кнопки -->
         <div class="social-links  page-footer__column">
-          <a href="#" class="social-link  social-link--instagram" title="Перейти в нашу группу в Instagram.">Мы в Instagram</a>
-          <a href="#" class="social-link  social-link--facebook" title="Перейти в группу Facebook.">Мы в Facebook</a>
-          <a href="#" class="social-link  social-link--twitter" title="Прочитать новости о нас в Twitter.">Мы в Twitter</a>
+          <a href="#" class="social-link" title="Перейти в нашу группу в Instagram."><img src="img/icon-insta.svg" alt="Instagram"></a>
+          <a href="#" class="social-link" title="Перейти в группу Facebook."><img src="img/icon-fb.svg" alt="Facebook"></a>
+          <a href="#" class="social-link" title="Прочитать новости о нас в Twitter."><img src="img/icon-twitter.svg" alt="Twitter"></a>
         </div>
         <!-- .Социальные кнопки -->
 

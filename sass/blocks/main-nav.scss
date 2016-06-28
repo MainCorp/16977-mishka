@@ -4,7 +4,7 @@
   font-weight: bold;
 
   padding: 27px 0;
-  padding-left: 75px;
+  padding-left: 45px;
   display: block;
 
   @media #{$tablet} {
@@ -15,6 +15,14 @@
     @media #{$tablet} {
       font-size: 0;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
 }
@@ -30,6 +38,8 @@
 
     position: absolute;
     left: 0;
+    z-index: 99;
+
     top: 107px;
     display: flex;
   }
@@ -98,67 +108,22 @@
     padding-left: 78px;
   }
 
-  &--search {
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 30px;
-      top: 27px;
-      width: 18px;
-      height: 18px;
-      background-color: $color-title;
-
-      @media #{$tablet} {
-        content: "";
-        position: absolute;
-        left: 33px;
-        top: 37px;
-        width: 18px;
-        height: 18px;
-        background-color: $color-title;
-      }
-
-    }
-
-  }
-
-  &--cart {
-
-    &::after {
-
-      content: "";
-      position: absolute;
-      left: 30px;
-      top: 27px;
-      width: 18px;
-      height: 18px;
-      background-color: $color-title;
-
-      @media #{$tablet} {
-        content: "";
-        position: absolute;
-        left: 38px;
-        top: 37px;
-        width: 18px;
-        height: 18px;
-        background-color: $color-title;
-      }
-
-    }
-
-  }
-
 }
 
 .main-nav__toggle {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   padding: 0;
+  outline: 0;
 
   position: absolute;
-  right: 30px;
-  top: 28px;
+  right: -3px;
+  top: 25px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media #{$tablet} {
     display: none;
@@ -177,6 +142,7 @@
     font-size: 14px;
     line-height: 24px;
     color: $color-page;
+    z-index: 99;
   }
 
   @media #{$desktop} {
@@ -196,6 +162,7 @@
     left: 0;
     top: 112px;
     font-size: 14px;
+    z-index: 99;
   }
 }
 

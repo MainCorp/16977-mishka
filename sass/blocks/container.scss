@@ -18,6 +18,53 @@
     }
   }
 
+  &--size {
+    width: 320px;
+    margin: 0 auto;
+
+    @media #{$tablet} {
+      width: 668px;
+    }
+
+    @media #{$desktop} {
+      width: 1050px;
+    }
+  }
+
+  &--comment-column {
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    @media #{$tablet} {
+      padding-top: 75px;
+    }
+
+    @media #{$desktop} {
+      padding-top: 70px;
+      padding-left: 175px;
+    }
+
+    &::before {
+      @media #{$tablet} {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 457px;
+        left: -50px;
+        top: 0;
+        background-size: contain;
+        z-index: -10;
+
+        @include retina-bg("review", "jpg");
+        
+        @media #{$desktop} {
+          left: 0;
+        }
+      }
+    }
+  }
+
   &--flex {
     @media #{$tablet} {
       display: flex;

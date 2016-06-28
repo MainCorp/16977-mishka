@@ -1,14 +1,43 @@
 .content-header {
-  background-color: $color-bg;
+  background-color: $background;
 
   margin-bottom: 30px;
 
   @media #{$tablet} {
-    margin-bottom: 78px;
+    position: relative;
+    margin-bottom: 70px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 22px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: repeat-x;
+
+      left: 0;
+      right: 0;
+      bottom: -5px;
+    }
+
   }
 
   @media #{$desktop} {
-    margin-bottom: 136px;
+    margin-bottom: 110px;
+  }
+
+  &--background {
+
+    @include retina-bg("hero-mobile", "jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    @media #{$tablet} {
+      background-size: cover;
+      @include retina-bg("hero-desktop", "jpg");
+    }
+
   }
 }
 
@@ -16,7 +45,7 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  padding: 57px 30px;
+  padding: 57px 0px;
   text-align: center;
 
   @media #{$tablet} {
@@ -29,10 +58,12 @@
   @media #{$desktop} {
     font-size: 50px;
     line-height: 57px;
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   &--indent {
-    padding: 70px 30px 5px;
+    padding: 70px 0 5px;
     margin-bottom: 120px;
 
     @media #{$tablet} {
