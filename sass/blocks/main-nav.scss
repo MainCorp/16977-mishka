@@ -1,17 +1,33 @@
+.main-nav {
+  @media #{$tablet} {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .main-nav__link {
   text-decoration: none;
   color: #000;
   font-weight: bold;
 
   padding: 27px 0;
-  padding-left: 45px;
+  padding-left: 75px;
   display: block;
+  max-width: 320px;
+  margin: 0 auto;
+
+  position: relative;
 
   @media #{$tablet} {
-    padding: 0;
+     border: none;
+     padding: 0;
+     margin: 0;
+     display: inline-block;
+     max-width: none;
   }
 
-  &--hidden {
+  &#{&}--hidden {
     @media #{$tablet} {
       font-size: 0;
     }
@@ -32,31 +48,34 @@
   line-height: 24px;
   padding: 0;
   margin: 0;
+  background-color: #fff;
 
   @media #{$tablet} {
-    font-size: 14px;
-
-    position: absolute;
-    left: 0;
-    z-index: 99;
-
-    top: 107px;
     display: flex;
+    font-size: 14px;
+    padding-left: 50px;
+    padding-top: 20px;
+    background-color: transparent;
   }
 
   @media #{$desktop} {
     font-size: 16px;
 
-    top: 0;
+    padding-top: 0;
+    background: #fff;
+    order: -3;
+    flex-basis: 37%;
+    border-bottom: 1px solid $color-smoke-white;
+    border-left: 1px solid $color-smoke-white;
   }
 }
 
 .main-nav__item {
   list-style: none;
 
-  border: 1px solid #ececec;
   border-left-color: #fff;
   border-right-color: #fff;
+  border-bottom: 1px solid $color-smoke-white;
 
   @media #{$tablet} {
     padding: 0;
@@ -65,7 +84,7 @@
   }
 
   @media #{$desktop} {
-    border-right: 1px solid #ececec;
+    border-right: 1px solid $color-smoke-white;
     padding: 32px 0;
     padding-right: 36px;
 
@@ -75,7 +94,7 @@
 .main-nav__item:nth-child(2) {
   @media #{$desktop} {
     border-right: none;
-    padding-left: 35px;
+    padding-left: 36px;
   }
 }
 
@@ -85,27 +104,45 @@
 
 
   @media #{$tablet} {
-    display: inline-flex;
+    order: -1;
+    display: flex;
+    flex-basis: 390px;
+    flex-grow: 1;
+    border: none;
+    background: #fff;
+  }
+
+  @media #{$desktop} {
+    flex-basis: 26%;
   }
 }
 
 .main-nav__user-item {
   list-style: none;
-  position: relative;
-
-  border: 1px solid #ececec;
-  border-left-color: #fff;
-  border-right-color: #fff;
 
   @media #{$tablet} {
-    border: none;
-    border-left: 1px solid #ececec;
-    padding: 34px 0;
-    padding-left: 77px;
+    order: -1;
+    display: flex;
+    flex-basis: 390px;
+    flex-grow: 1;
+    border: 1px solid $color-smoke-white;
   }
 
-  @media #{$desktop} {
-    padding-left: 78px;
+  &#{&}--search {
+    @media #{$tablet} {
+      max-width: 82px;
+      align-items: center;
+    }
+    @media #{$desktop} {
+      flex-shrink: 0;
+    }
+  }
+
+  &#{&}--cart {
+    @media #{$tablet} {
+      align-items: center;
+      padding-left: 35px;
+    }
   }
 
 }
@@ -117,7 +154,7 @@
   outline: 0;
 
   position: absolute;
-  right: -3px;
+  right: 30px;
   top: 25px;
   background-color: transparent;
   border: none;
@@ -135,40 +172,73 @@
 
   @media #{$tablet} {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 107px;
+    margin-left: 90px;
+    margin-top: 20px;
 
     font-size: 14px;
     line-height: 24px;
-    color: $color-page;
-    z-index: 99;
+    color: $color-page
   }
 
   @media #{$desktop} {
-    top: 110px;
-    right: 3px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: 50px;
   }
 }
 
 .main-nav__attracting {
   display: none;
 
-  @media #{$desktop} {
-    display: flex;
-    position: absolute;
-    margin: 0;
+  @media #{$tablet} {
+    display: block;
+    margin-left: auto;
     padding: 0;
-    left: 0;
-    top: 112px;
+    margin: 0;
     font-size: 14px;
-    z-index: 99;
+  }
+
+  @media #{$desktop} {
+    margin-left: 50px;
+    margin-top: 20px;
+    flex-basis: 100%;
+    display: flex;
   }
 }
 
 .main-nav__attracting-item {
+  display: none;
   @media #{$desktop} {
-    list-style: none;
-    padding-right: 60px;
+    display: block;
+    margin-right: 60px;
+  }
+
+}
+
+.main-nav__link-cart:hover > .icon-state--cart {
+  color: $color-title;
+}
+
+@media #{$mobile-only} {
+  .main-nav--js {
+    .main-nav__items,
+    .main-nav__user-items {
+      display: none;
+    }
+
+    .main-nav__toggle {
+      background-image: url("../img/icon-menu-open.svg");
+    }
+
+    &.main-nav--open {
+      .main-nav__items,
+      .main-nav__user-items {
+        display: block;
+      }
+
+      .main-nav__toggle {
+        background-image: url("../img/icon-menu-close.svg");
+      }
+    }
   }
 }

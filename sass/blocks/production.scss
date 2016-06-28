@@ -1,7 +1,8 @@
 .production {
   margin: 0 0 58px;
   padding-bottom: 33px;
-  border: 1px solid #ededed;
+  border: 1px solid $color-smoky-white;
+  position: relative;
 
   @media #{$tablet} {
     display: flex;
@@ -17,6 +18,14 @@
     padding-bottom: 60px;
     margin-bottom: 105px;
     min-height: 395px;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 10px $color-smoke-white;
+  }
+
+  &:active {
+    box-shadow: 0 3px 10px $color-smoke-white;
   }
 }
 
@@ -51,9 +60,9 @@
   @media #{$desktop} {
     align-self: flex-end;
     padding: 0;
-    max-width: 145px;
-    padding-right: 145px;
-    padding-top: 90px;
+    max-width: 235px;
+    padding-right: 50px;
+    padding-top: 95px;
     padding-bottom: 30px;
   }
 
@@ -97,7 +106,7 @@
   @media #{$desktop} {
     font-size: 16px;
     line-height: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 }
 
@@ -120,24 +129,36 @@
     width: 680px;
     height: 455px;
     margin-bottom: 0;
+    top: 0;
 
     position: absolute;
-    z-index: -10;
+  }
+}
+
+.production__btn {
+  position: absolute;
+  width: 105px;
+  height: 77px;
+  left: 77px;
+  top: 40px;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  background-image: url("../img/icon-play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media #{$tablet} {
+    left: 285px;
+    top: 195px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 77px;
-    left: 81px;
-    top: 40px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
+  &:hover {
+    transform: scale(1.2);
+  }
 
-    @media #{$tablet} {
-      left: 285px;
-      top: 195px;
-    }
+  &:active {
+    background-size: 80%;
+    opacity: .8;
   }
 }

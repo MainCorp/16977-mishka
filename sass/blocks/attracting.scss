@@ -34,6 +34,11 @@
     padding-left: 36px;
 
     width: 50%;
+
+    &:hover {
+      padding-top: 23px;
+      transform: translateY(-5px);
+    }
   }
 
   @media #{$desktop} {
@@ -43,35 +48,41 @@
   }
 
   &:hover {
-    background-color: #59d5bc;
+    background-color: $color-turquoise;
   }
 
-  &--color {
+  &#{&}--color {
     background-color: $color-title-mod;
   }
 
-  &--color:hover {
-    background-color: #46c1ae;
+  &#{&}--color:hover {
+    background-color: $color-krayol;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    height: 65px;
-    width: 60px;
-    right: 30px;
-    top: 20px;
+}
 
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.attracting__image {
+  position: absolute;
+  height: 65px;
+  width: 60px;
+  right: 30px;
+  top: 20px;
 
-  &--decoration::after {
-    background-image: url("../img/icon-interior.svg");
-  }
+  color: $color-krayol-jungle;
+}
 
-  &--toys-img::after {
-    background-image: url("../img/icon-toy.svg");
-  }
+.attracting__button:hover > .attracting__image {
+  color: $color-krayol-darken;
+}
 
+.attracting__button:active > .attracting__image {
+  color: $color-krayol-shamrock;
+}
+
+.attracting__button:active > .attracting__image--toy {
+  color: $color-attracting-toy;
+}
+
+.attracting__button:active > .attracting__title {
+  opacity: .3;
 }

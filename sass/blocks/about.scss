@@ -2,7 +2,7 @@
   margin-bottom: 60px;
 
   @media #{$tablet} {
-    margin-bottom: 95px;
+    margin-bottom: 30px;
   }
 
   @media #{$desktop} {
@@ -29,6 +29,9 @@
   @media #{$tablet} {
     max-width: 330px;
     margin-bottom: 50px;
+    padding-top: 35px;
+
+    position: relative;
   }
 
   @media #{$desktop} {
@@ -54,6 +57,17 @@
   @media #{$desktop} {
     font-size: 50px;
     line-height: 57px;
+
+    margin-bottom: 50px;
+  }
+}
+
+.about__icon {
+  @media #{$tablet} {
+    position: absolute;
+
+    left: 0;
+    top: 0;
   }
 }
 

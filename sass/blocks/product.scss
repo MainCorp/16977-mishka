@@ -1,19 +1,18 @@
 .product {
-  outline: 1px solid #ededed;
+  outline: 1px solid $color-smoky-white;
+  margin: 0 0 30px;
 
   &:hover {
-    box-shadow: 0 5px 10px #ececec;
+    box-shadow: 0 5px 10px $color-smoke-white;
   }
 
   &:active {
-    box-shadow: 0 3px 10px #ececec;
+    box-shadow: 0 3px 10px $color-smoke-white;
   }
-
-  margin: 0 0 28px;
 
   @media #{$tablet} {
     display: flex;
-    margin: 0 0 53px;
+    margin: 0 0 55px;
   }
 
   @media #{$desktop} {
@@ -25,6 +24,10 @@
 .product:last-child {
   @media #{$tablet} {
     margin-bottom: 51px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 55px;
   }
 
 }
@@ -42,7 +45,7 @@
   @media #{$desktop} {
     max-width: 255px;
     margin: 0;
-    padding: 0 30px;
+    padding: 0 27px;
     flex-grow: 1;
   }
 }
@@ -78,6 +81,10 @@
 
   @media #{$tablet} {
     font-size: 18px;
+    margin-top: 5px;
+  }
+  @media #{$desktop} {
+    margin-top: 0px;
   }
 }
 
@@ -107,11 +114,14 @@
 
   margin-bottom: 28px;
   padding-top: 22px;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid $color-smoke-white;
 
   @media #{$tablet} {
     margin: auto 0 0;
     padding: 25px 0;
+  }
+  @media #{$desktop} {
+    padding: 21px 0;
   }
 }
 

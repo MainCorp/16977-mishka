@@ -2,10 +2,90 @@
   color: black;
 
   &:hover {
-    color: #63d1bb;
+    color: $color-title;
   }
 
   &:active {
     opacity: .3;
+  }
+}
+
+.icon-state--search {
+  color: $color-telegry;
+  position: absolute;
+  left: 30px;
+  @media #{$tablet} {
+    position: static;
+    margin-left: 30px;
+  }
+}
+
+.icon-state--cart {
+  color: $color-telegry;
+  position: absolute;
+  left: 30px;
+
+  @media #{$tablet} {
+    position: static;
+    vertical-align: -3px;
+    margin-right: 20px;
+  }
+
+  @media #{$desktop} {
+    margin-right: 25px;
+  }
+}
+
+.icon-state--catalog-cart {
+  color: $color-telegry;
+}
+
+.icon-state--slider-control {
+  position: absolute;
+  top: 12px;
+  left: 30px;
+
+  @media #{$tablet} {
+    left: 0;
+    top: 0;
+  }
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
+.icon-state--logo-htmlacademy {
+  position: absolute;
+  right: -50px;
+  top: -10px;
+  color: $color-title;
+
+  @media #{$tablet} {
+    right: 0;
+    top: 10px;
+  }
+
+  @media #{$desktop} {
+    top: 8px;
+  }
+}
+
+.icon-state--input {
+  position: absolute;
+  right: 0;
+
+  @media #{$tablet} {
+    right: 20px;
+    top: 15px;
+  }
+
+  @media #{$desktop} {
+    right: 10px;
+    top: 20px;
   }
 }

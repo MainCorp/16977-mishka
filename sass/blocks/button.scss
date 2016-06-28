@@ -1,0 +1,77 @@
+.button {
+  font-family: $fonts-page;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-page;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background-color: #fff;
+  border: 2px solid $color-page;
+  padding: 16px 20px;
+  outline: 0;
+  width: 100%;
+
+  @media #{$tablet} {
+    display: block;
+    padding-right: 40px;
+    padding-left: 40px;
+
+  }
+
+  @media #{$desktop} {
+    margin: 0;
+  }
+
+  &#{&}--average {
+
+    @media #{$tablet} {
+      width: auto;
+    }
+  }
+
+  &#{&}--regime {
+    @media #{$tablet} {
+      order: -1;
+      max-width: 170px;
+      max-height: 50px;
+      margin-top: 5px;
+    }
+
+    @media #{$desktop} {
+      max-width: 175px;
+      max-height: 50px;
+      margin-top: 11px;
+      margin-left: auto;
+    }
+  }
+
+  &#{&}--center {
+    @media #{$tablet} {
+      margin: 0 auto;
+    }
+
+    @media #{$desktop} {
+      margin: 0;
+      margin-right: auto;
+    }
+  }
+  &#{&}--full-size {
+    width: 100%;
+  }
+
+  &#{&}--knitting {
+    @media #{$desktop} {
+      margin-left: 175px;
+    }
+  }
+  &:hover {
+    background-color: $color-page;
+    color: #fff;
+  }
+
+  &:active {
+    color: rgba(255,255,255,.3);
+  }
+}

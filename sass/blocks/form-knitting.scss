@@ -1,5 +1,5 @@
 .form-knitting {
-  margin-bottom: 55px;
+  margin-bottom: 65px;
 
   @media #{$tablet} {
     margin: 0;
@@ -25,7 +25,7 @@
       width: 700px;
   }
 
-  &--color {
+  &#{&}--color {
     @media #{$desktop} {
       width: 70%;
     }
@@ -45,7 +45,7 @@
     display: flex;
     }
 
-  &--repainting {
+  &#{&}--repainting {
     @media #{$tablet} {
       background-color: $color-bg;
       padding-top: 65px;
@@ -53,15 +53,16 @@
     }
   }
 
-  &--tel {
+  &#{&}--tel {
+    padding-top: 15px;
     @media #{$tablet} {
       padding-top: 40px;
       padding-bottom: 0;
     }
   }
 
-  &--email {
-    margin-top: 30px;
+  &#{&}--email {
+    margin-top: 35px;
     margin-bottom: 35px;
     @media #{$tablet} {
       margin: 0;
@@ -70,16 +71,16 @@
     }
   }
 
-  &--full-name {
+  &#{&}--full-name {
     @media #{$tablet} {
       padding-top: 45px;
-      padding-bottom: 45px;
+      padding-bottom: 50px;
     }
   }
 
-  &--frame {
+  &#{&}--frame {
     @media #{$tablet} {
-      padding-top: 65px;
+      padding-top: 70px;
     }
   }
 }
@@ -91,6 +92,7 @@
   color: $color-page;
 
   margin: 0;
+  margin-top: -5px;
   margin-bottom: 24px;
 
   @media #{$tablet} {
@@ -100,10 +102,13 @@
 
   @media #{$desktop} {
     padding: 0 175px;
+    margin-top: -10px;
+    margin-bottom: 30px;
   }
 }
 
 .form-knitting__title {
+  display: block;
   font-family: $fonts-page;
   font-size: 16px;
   line-height: 16px;
@@ -126,9 +131,12 @@
     text-align: center;
   }
 
-  &--stick {
-    padding-top: 25px;
+  &#{&}--stick {
     margin: 0;
+
+    @media #{$tablet} {
+      padding-top: 25px;
+    }
   }
 
   &::after {
@@ -152,10 +160,13 @@
 
   @media #{$tablet} {
     display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    margin-left: auto;
     font-size: 16px;
     line-height: 30px;
+  }
+
+  @media #{$desktop} {
+    margin-right: 160px;
+    margin-top: 10px;
   }
 }
