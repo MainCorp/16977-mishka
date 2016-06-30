@@ -1,6 +1,6 @@
 .goods {
   padding-bottom: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   position: relative;
 
   @media #{$tablet} {
@@ -101,7 +101,7 @@
     font-size: 16px;
     line-height: 30px;
 
-    margin-bottom: 20px;
+    margin-bottom: 33px;
     max-width: 285px;
   }
 
@@ -115,7 +115,7 @@
   margin-bottom: 25px;
 
   @media #{$tablet} {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   @media #{$desktop} {
@@ -124,7 +124,7 @@
 }
 
 .goods__row {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-smoke-white;
 }
 
 .goods__data {

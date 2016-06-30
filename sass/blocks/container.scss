@@ -10,15 +10,7 @@
     width: 1050px;
   }
 
-  &--footer-wrapper {
-    @media #{$tablet} {
-      display: flex;
-      justify-content: space-between;
-      padding: 50px 0;
-    }
-  }
-
-  &--size {
+  &#{&}--size {
     width: 320px;
     margin: 0 auto;
 
@@ -31,59 +23,17 @@
     }
   }
 
-  &--comment-column {
-    justify-content: space-between;
-
-    box-sizing: border-box;
-
-    @media #{$tablet} {
-      padding-top: 75px;
-    }
-
-    @media #{$desktop} {
-      padding-top: 70px;
-      padding-left: 175px;
-    }
-
-    &::before {
-      @media #{$tablet} {
-        content: "";
-        position: absolute;
-        width: 350px;
-        height: 457px;
-        left: -50px;
-        top: 0;
-        background-size: contain;
-        z-index: -10;
-
-        @include retina-bg("review", "jpg");
-        
-        @media #{$desktop} {
-          left: 0;
-        }
-      }
-    }
-  }
-
-  &--flex {
+  &#{&}--flex {
     @media #{$tablet} {
       display: flex;
       flex-wrap: wrap;
       position: relative;
     }
-
   }
 
-  &--footer-wrapper {
-    @media #{$tablet} {
-      display: flex;
-      justify-content: space-between;
-      padding: 50px 0;
-    }
+  &#{&}--column {
+    display: flex;
+    flex-direction: column;
   }
 
-}
-.container--column {
-  display: flex;
-  flex-direction: column;
 }

@@ -1,28 +1,12 @@
 .copyright {
   padding: 30px 0;
   position: relative;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $color-grey-light;
 
   @media #{$tablet} {
     border: none;
     margin: 0;
     padding: 0;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 38px;
-    width: 30px;
-    height: 35px;
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-
-    @media #{$tablet} {
-      right: 0;
-      top: 5px;
-    }
   }
 }
 
@@ -35,10 +19,20 @@
   text-decoration: none;
   padding-left: 40px;
 
+  position: relative;
+
   @media #{$tablet} {
     display: block;
     padding: 0;
     padding-right: 50px;
     padding-top: 12px;
   }
+
+  &:active {
+    opacity: .3;
+  }
+}
+
+.copyright__title:hover > .icon-state--logo-htmlacademy {
+  color: $color-krayol;
 }

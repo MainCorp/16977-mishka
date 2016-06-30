@@ -1,14 +1,19 @@
 .page-header {
   @media #{$tablet} {
-    border-bottom: 1px solid #ececec;
+    background: #f9f9f9;
   }
 }
 
 .page-header__wrapper {
-  position: relative;
-
   @media #{$tablet} {
-    display: flex;
-    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  @media #{$desktop} {
+    width: 1150px;
+    margin: 0 auto;
+    background: transparent;
   }
 }

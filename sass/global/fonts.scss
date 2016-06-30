@@ -6,14 +6,14 @@ body {
 
 @font-face {
   font-family: $fonts-page;
-  src: url("../fonts/opensans.woff"),
-       url("../fonts/opensans.woff2");
+  src: url("../fonts/opensans.woff") format("woff"),
+       url("../fonts/opensans.woff2") format("woff2");
   font-weight: normal;
 }
 
 @font-face {
   font-family: $fonts-page;
-  src: url("../fonts/opensansbold.woff"),
-       url("../fonts/opensansbold.woff2");
+  src: url("../fonts/opensansbold.woff") format("woff"),
+       url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: bold;
 }
