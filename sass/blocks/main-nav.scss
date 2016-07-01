@@ -17,6 +17,7 @@
   @media #{$tablet} {
     flex-basis: 360px;
     padding-left: 45px;
+    padding-top: 18px;
     border: 1px solid $color-smoke-white;
     border-top: none;
     border-right: none;
@@ -83,7 +84,7 @@
     display: flex;
     font-size: 14px;
     padding-left: 45px;
-    padding-top: 15px;
+    padding-top: 17px;
     background-color: transparent;
   }
 
