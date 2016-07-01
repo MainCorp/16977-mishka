@@ -17,6 +17,11 @@
     column-count: 2;
     padding-top: 53px;
   }
+
+  @media #{$desktop} {
+    column-width: 350px;
+    column-gap: 0px;
+  }
 }
 
 .about__item {
@@ -31,7 +36,7 @@
   }
 
   @media #{$desktop} {
-    width: 350px;
+    max-width: 350px;
     padding-bottom: 22px;
   }
 }
