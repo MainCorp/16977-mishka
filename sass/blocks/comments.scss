@@ -5,7 +5,8 @@
   position: relative;
 
   @media #{$tablet} {
-    padding-bottom: 100px;
+    padding-bottom: 45px;
+    margin-bottom: 57px; 
     min-height: 460px;
   }
 
@@ -25,7 +26,7 @@
   box-sizing: border-box;
 
   @media #{$tablet} {
-    padding-top: 75px;
+    padding-top: 37px;
   }
 
   @media #{$desktop} {
@@ -40,7 +41,7 @@
       width: 350px;
       height: 457px;
       left: -50px;
-      top: -60px;
+      top: -37px;
       background-size: contain;
       z-index: -10;
 
