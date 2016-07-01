@@ -1,8 +1,8 @@
 .about {
-  margin-bottom: 63px;
+  margin-bottom: 60px;
 
   @media #{$tablet} {
-    margin-bottom: 70px;
+    //margin-bottom: 70px;
   }
 
   @media #{$desktop} {
@@ -15,29 +15,27 @@
 
   @media #{$tablet} {
     column-count: 2;
-    padding-top: 53px;
+    column-width: 300px;
+    column-gap: 0;
   }
 
   @media #{$desktop} {
-    column-width: 350px;
-    column-gap: 0px;
+    padding-right: 170px;
   }
 }
 
 .about__item {
   position: relative;
-  margin-bottom: 38px;
-  padding-bottom: 31px;
+  margin-bottom: 30px;
+  padding-top: 55px;
 
   @media #{$tablet} {
     max-width: 330px;
-    padding-top: 32px;
-    padding-bottom: 14px;
+    margin-bottom: 52px;
   }
 
   @media #{$desktop} {
     max-width: 350px;
-    padding-bottom: 22px;
   }
 }
 
@@ -50,13 +48,12 @@
   line-height: 30px;
   font-weight: bold;
 
-  margin: 0;
-  margin-bottom: 70px;
+  margin: 0 0 30px;
 
   @media #{$tablet} {
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 
   @media #{$desktop} {
@@ -72,63 +69,33 @@
   top: 0;
 
   &--item-1 {
-    top: -40px;
-    left: 8px;
-
-    @media #{$tablet} {
-      top: 0px;
-      left: 9px;
-    }
+    top: 2px;
+    left: 9px;
   }
 
   &--item-2 {
-    top: -37px;
+    top: 3px;
     left: 0;
-
-    @media #{$tablet} {
-      top: 0;
-      left: 0;
-    }
   }
 
   &--item-3 {
-    top: -32px;
+    top: 8px;
     left: 8px;
-
-    @media #{$tablet} {
-      top: 5px;
-      left: 9px;
-    }
   }
 
   &--item-4 {
-    top: -33px;
+    top: 5px;
     left: 4px;
-
-    @media #{$tablet} {
-      top: 3px;
-      left: 0;
-    }
   }
 
   &--item-5 {
-    top: -34px;
+    top: 6px;
     left: -4px;
-
-    @media #{$tablet} {
-      top: 3px;
-      left: -13px;
-    }
   }
 
   &--item-6 {
-    top: -35px;
+    top: 4px;
     left: 3px;
-
-    @media #{$tablet} {
-      top: 2px;
-      left: -3px;
-    }
   }
 }
 
@@ -138,15 +105,9 @@
   font-weight: bold;
 
   margin: 0;
-  padding-top: 15px;
 
   @media #{$tablet} {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  @media #{$desktop} {
-    padding-left: 0;
-    margin-top: 0;
   }
 }
