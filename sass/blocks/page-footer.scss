@@ -6,6 +6,7 @@
 .page-footer__column {
   @media #{$tablet} {
     width: 185px;
+    padding-top: 2px;
   }
 }
 
