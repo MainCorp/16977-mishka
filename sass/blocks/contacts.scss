@@ -95,6 +95,7 @@
 .contacts__link {
   text-decoration: none;
   color: $color-page;
+  transition: all .15s;
 
   border-bottom: 1px solid $color-form;
 
