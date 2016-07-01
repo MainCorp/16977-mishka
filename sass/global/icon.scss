@@ -43,8 +43,8 @@
 
 .icon-state--slider-control {
   position: absolute;
-  top: 12px;
-  left: 30px;
+  top: 13px;
+  left: 32px;
 
   @media #{$tablet} {
     left: 0;
@@ -89,4 +89,9 @@
     right: 10px;
     top: 20px;
   }
+}
+
+.icon-state--social {
+  width: 25px;
+  height: 25px;
 }

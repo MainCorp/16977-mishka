@@ -113,6 +113,7 @@
 
 .goods__table {
   margin-bottom: 25px;
+  border-collapse: collapse;
 
   @media #{$tablet} {
     margin-bottom: 35px;
@@ -123,15 +124,12 @@
   }
 }
 
-.goods__row {
-  border-bottom: 1px solid $color-smoke-white;
-}
-
 .goods__data {
   font-family: $fonts-page;
   font-size: 14px;
   line-height: 20px;
   color: $color-page;
+  border-bottom: 1px solid $color-smoke-white;
 
   padding: 9px 0 10px;
   padding-right: 33px;

@@ -39,7 +39,7 @@
   color: #000;
   font-weight: bold;
 
-  padding: 27px 0;
+  padding: 28px 0;
   padding-left: 75px;
   display: block;
   max-width: 320px;
@@ -69,6 +69,14 @@
     opacity: 0.3;
   }
 
+}
+
+.main-nav__link-cart {
+  padding-top: 33px;
+
+  @media #{$tablet} {
+    padding-top: 0;
+  }
 }
 
 .main-nav__items {
