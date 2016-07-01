@@ -6,6 +6,34 @@
   }
 }
 
+.main-nav__logo {
+  text-align: center;
+  padding: 15px 30px 15px 40px;
+  line-height: 20px;
+  background: #fff;
+  border-bottom: 1px solid $color-smoke-white;
+  box-sizing: border-box;
+  transition: .15s;
+
+  @media #{$tablet} {
+    flex-basis: 360px;
+    padding-left: 45px;
+    border: 1px solid $color-smoke-white;
+    border-right: none;
+    text-align: left;
+    order: -2;
+    flex-grow: 1;
+  }
+
+  @media #{$desktop} {
+    flex-basis: 15%;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-left: none;
+  }
+}
+
 .main-nav__link {
   text-decoration: none;
   transition: .15s;
