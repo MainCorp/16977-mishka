@@ -38,6 +38,7 @@
   border: 2px solid $color-page;
   border-radius: 50%;
   flex-shrink: 0;
+  transition: .15s;
 
   @media #{$tablet} {
     width: 50px;

@@ -3,6 +3,7 @@
   padding-bottom: 33px;
   border: 1px solid $color-smoky-white;
   position: relative;
+  transition: .15s;
 
   @media #{$tablet} {
     display: flex;

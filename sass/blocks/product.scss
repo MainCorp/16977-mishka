@@ -1,6 +1,7 @@
 .product {
   outline: 1px solid $color-smoky-white;
   margin: 0 0 30px;
+  transition: .15s;
 
   &:hover {
     box-shadow: 0 5px 10px $color-smoke-white;
