@@ -8,6 +8,10 @@
     margin: 0;
     padding: 0;
   }
+
+  &--column {
+    padding-top: 25px;
+  }
 }
 
 
@@ -19,6 +23,7 @@
   text-decoration: none;
   padding-left: 40px;
   transition: all .15s;
+  vertical-align: 10px;
 
   position: relative;
 

@@ -72,14 +72,6 @@
 
 }
 
-.main-nav__link-cart {
-  padding-top: 33px;
-
-  @media #{$tablet} {
-    padding-top: 0;
-  }
-}
-
 .main-nav__items {
   font-size: 16px;
   line-height: 24px;
@@ -280,5 +272,9 @@
         background-image: url("../img/icon-menu-close.svg");
       }
     }
+  }
+
+  .main-nav__link-cart {
+    padding-top: 33px;
   }
 }
