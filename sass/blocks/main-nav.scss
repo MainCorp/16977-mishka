@@ -18,6 +18,7 @@
     flex-basis: 360px;
     padding-left: 45px;
     border: 1px solid $color-smoke-white;
+    border-top: none;
     border-right: none;
     text-align: left;
     order: -2;
@@ -89,8 +90,8 @@
   @media #{$tablet} {
     display: flex;
     font-size: 14px;
-    padding-left: 50px;
-    padding-top: 20px;
+    padding-left: 45px;
+    padding-top: 15px;
     background-color: transparent;
   }
 
@@ -155,13 +156,14 @@
 
 .main-nav__user-item {
   list-style: none;
+  border-bottom: 1px solid $color-smoke-white;
 
   @media #{$tablet} {
     order: -1;
     display: flex;
     flex-basis: 390px;
     flex-grow: 1;
-    border: 1px solid $color-smoke-white;
+    border-left: 1px solid $color-smoke-white;
   }
 
   &#{&}--search {
@@ -178,6 +180,8 @@
     @media #{$tablet} {
       align-items: center;
       padding-left: 35px;
+      margin-top: -5px;
+      border-right: 1px solid $color-smoke-white;
     }
   }
 
@@ -209,7 +213,7 @@
   @media #{$tablet} {
     display: block;
     margin-left: 90px;
-    margin-top: 20px;
+    margin-top: 15px;
 
     font-size: 14px;
     line-height: 24px;

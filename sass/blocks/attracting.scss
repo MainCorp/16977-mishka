@@ -33,6 +33,7 @@
     line-height: 30px;
 
     padding-left: 36px;
+    padding-bottom: 35px;
 
     width: 50%;
 
@@ -69,6 +70,18 @@
   top: 20px;
 
   color: $color-krayol-jungle;
+
+  &--interior {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+  }
+
+  &--toy {
+    position: absolute;
+    right: 35px;
+    top: 30px;
+  }
 }
 
 .attracting__button:hover > .attracting__image {
