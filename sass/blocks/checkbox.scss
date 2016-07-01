@@ -39,7 +39,7 @@
   width: 36px;
   height: 36px;
   border: 2px solid $color-page;
-  transition: .15s;
+  transition: all .15s;
 
   @media #{$tablet} {
     width: 50px;
