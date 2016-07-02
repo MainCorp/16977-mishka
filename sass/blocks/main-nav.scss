@@ -29,6 +29,7 @@
   @media #{$desktop} {
     flex-basis: 15%;
     padding: 0;
+    width: 0;
     padding-left: 30px;
     padding-top: 10px;
     border-left: none;
@@ -94,6 +95,7 @@
     padding-top: 0;
     background: #fff;
     order: -3;
+    width: 0;
     flex-basis: 37%;
     border-bottom: 1px solid $color-smoke-white;
     border-left: 1px solid $color-smoke-white;
@@ -144,6 +146,7 @@
 
   @media #{$desktop} {
     flex-basis: 26%;
+    width: 0;
   }
 }
 
